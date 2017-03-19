@@ -1,0 +1,47 @@
+{
+    "name": "学习笔记",
+    "version": "1.0.0",
+    "description": "前端学习笔记",
+    "keywords": [
+        ""
+    ],
+    "homepage": "http://JSLite.io",
+    "author": "",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "licenses": "MIT",
+    "idoc": {
+        "theme": "default",
+        "md": [
+            "首页.md",
+            {
+                "HTML": [
+                    "HTML.md"
+                ]
+            },
+            {
+                "CSS": [
+                    "CSS.md"
+                ]
+            },
+            {
+                "Javascript": [
+                    "基本语法.md",
+                    "数据类型.md",
+                    "函数表达式.md"
+                ]
+            },
+            {
+                "工具": [
+                    "Webstorm.md",
+                    "Idoc.md"
+                ]
+            },
+            {
+                "node": []
+            }
+        ]
+    }
+}
