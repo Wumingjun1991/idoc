@@ -17,5 +17,11 @@
 * idoc server
 
 
+## idoc更新
 
-1.git init
+```
+    git status
+    git add -A 
+    git commit -m "first page update"
+    git push origin gh-pages
+```
