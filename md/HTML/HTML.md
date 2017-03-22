@@ -257,6 +257,7 @@
 
 ### `<meta>`规定了html文档的元信息
 
+* `<meta>`标签应该放在head元素的第一行
 * utf-8 国际通用编码
 * name="keywords" content="HTML5.JS...."
 * 关键字SEO优化搜索引擎
@@ -264,6 +265,7 @@
 ### title元素
 
 * html文档元素的名称，一个页面就只有一个title元素，里面内容显示在浏览器的页卡位置
+* title中的内容也会被SEO抓取
 
 ### link
 
