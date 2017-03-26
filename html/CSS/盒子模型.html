@@ -17,7 +17,7 @@
         </div>
         <input type="checkbox" id="idoc_nav" />
         <div class="menu_tree">
-        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li class="active"><a href="../../html/CSS/盒子模型.html">盒子模型</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/函数表达式.html">函数表达式</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li class="active"><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/定位.html">定位</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/函数表达式.html">函数表达式</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
         </div>
         
         
@@ -35,7 +35,7 @@
 <div class="container">
 
     <div class="page-toc">
-        <ul><li><a href="#t0盒子模型">盒子模型</a><ul><li><a href="#t1padding">padding</a></li><li><a href="#t2border">border</a></li><li><a href="#t3marging">marging</a></li><li><a href="#t4marging-top的传递问题">marging-top的传递问题</a></li><li><a href="#t5marging的兼容问题">marging的兼容问题</a></li><li><a href="#t6overflow">overflow</a></li></ul></li></ul>
+        <ul><li><a href="#t0盒子模型">盒子模型</a><ul><li><a href="#t1content">content</a></li><li><a href="#t2padding(内边距)">padding(内边距)</a></li><li><a href="#t3border(边框)">border(边框)</a></li><li><a href="#t4marging(外边距)">marging(外边距)</a></li><li><a href="#t5marging-top的传递问题">marging-top的传递问题</a></li><li><a href="#t6marging的兼容问题">marging的兼容问题</a></li><li><a href="#t7overflow">overflow</a></li><li><a href="#t8在布局中用css属性将据块级元素放到一行排布">在布局中用css属性将据块级元素放到一行排布</a></li><li><a href="#t9background">background</a></li></ul></li></ul>
     </div>
     
     <div class="content markdown-body">
@@ -50,14 +50,20 @@
 <li>allWidth=(border-left-width) + (padding-left) + (width) + (padding-right) + (border-right-width)</li>
 <li>allHeight=(border-top-width) + (padding-top) + (height) + (padding-bottom) + (border-bottom-width)</li>
 </ul>
-<h2 id="t1padding">padding <a href="#t1padding"> # </a></h2>
+<h2 id="t1content">content <a href="#t1content"> # </a></h2>
 <ul>
+<li>&#x6307;&#x7684;&#x662F;&#x76D2;&#x5B50;&#x6A21;&#x578B;&#x4E2D;&#x5185;&#x5BB9;&#x7684;&#x5BBD;&#x548C;&#x9AD8;</li>
+</ul>
+<h2 id="t2padding(&#x5185;&#x8FB9;&#x8DDD;)">padding(&#x5185;&#x8FB9;&#x8DDD;) <a href="#t2padding(&#x5185;&#x8FB9;&#x8DDD;)"> # </a></h2>
+<ul>
+<li>&#x6307;&#x7684;&#x662F;&#x662F;&#x5185;&#x5BB9;&#x8DDD;&#x79BB;&#x76D2;&#x5B50;&#x8FB9;&#x6846;&#x5185;&#x8FB9;&#x7F18;&#x7684;&#x8DDD;&#x79BB;</li>
 <li>padding: 1px 2px 3px 4px;&#x4E0A;&#xFF0C;&#x4E0B;&#xFF0C;&#x5DE6;&#xFF0C;&#x53F3;</li>
 <li>padding:1px 2px 3px;&#x4E0A;&#xFF0C;&#x5DE6;&#x53F3;&#xFF0C;&#x4E0B;</li>
 <li>padding:1px 2px;&#x4E0A;&#x4E0B;&#xFF0C;&#x5DE6;&#x53F3;</li>
 </ul>
-<h2 id="t2border">border <a href="#t2border"> # </a></h2>
+<h2 id="t3border(&#x8FB9;&#x6846;)">border(&#x8FB9;&#x6846;) <a href="#t3border(&#x8FB9;&#x6846;)"> # </a></h2>
 <ul>
+<li>&#x8FB9;&#x6846;&#x5305;&#x88F9;&#x7740;&#x5185;&#x5BB9;&#x548C;&#x5185;&#x8FB9;&#x8DDD;&#xFF0C;&#x8FB9;&#x6846;&#x53EF;&#x4EE5;&#x6709;&#x5BBD;&#x5EA6;</li>
 <li>border-top-width: &#x4E0A;&#x8FB9;&#x6846;&#x7684;&#x5BBD;&#x5EA6;</li>
 <li>border-top-style: &#x4E0A;&#x8FB9;&#x6846;&#x7684;&#x6837;&#x5F0F;</li>
 <li>border-top-color: &#x4E0A;&#x8FB9;&#x6846;&#x7684;&#x989C;&#x8272;</li>
@@ -66,12 +72,13 @@
 <li>broder-color: red&#xFF1B;&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x989C;&#x8272;&#x662F;&#x4E00;&#x6837;&#x7684;</li>
 <li>border: 1px solid red; &#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x6240;&#x6709;&#x6837;&#x5F0F;&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;</li>
 </ul>
-<h2 id="t3marging">marging <a href="#t3marging"> # </a></h2>
+<h2 id="t4marging(&#x5916;&#x8FB9;&#x8DDD;)">marging(&#x5916;&#x8FB9;&#x8DDD;) <a href="#t4marging(&#x5916;&#x8FB9;&#x8DDD;)"> # </a></h2>
 <ul>
+<li>&#x4E0D;&#x540C;&#x7684;&#x76D2;&#x5B50;&#x7684;&#x8FB9;&#x6846;&#x5916;&#x8FB9;&#x7F18;&#x548C;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x76D2;&#x5B50;&#x8FB9;&#x6846;&#x7684;</li>
 <li>marging&#x652F;&#x6301;&#x8D1F;&#x503C;</li>
 <li>marging-left&#x548C;marging-top&#x4E3A;&#x8D1F;&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8DD1;&#x51FA;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x90E8;&#x5206;&#x76F4;&#x63A5;&#x6D88;&#x5931;&#xFF0C;&#x4E0D;&#x4F1A;&#x6491;&#x5F00;&#x6574;&#x4E2A;&#x9875;&#x9762;</li>
 </ul>
-<h2 id="t4marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898;">marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898; <a href="#t4marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898;"> # </a></h2>
+<h2 id="t5marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898;">marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898; <a href="#t5marging-top&#x7684;&#x4F20;&#x9012;&#x95EE;&#x9898;"> # </a></h2>
 <ul>
 <li>&#x5982;&#x679C;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x6CA1;&#x6709;padding-top&#x6216;&#x8005;border-top&#x503C;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5B50;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;margin-top&#x503C;&#xFF0C;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;&#x503C;&#x4F20;&#x9012;&#x7ED9;&#x7236;&#x5143;&#x7D20;</li>
 <li>&#x89E3;&#x51B3;&#x65B9;&#x6CD5;:<ul>
@@ -80,30 +87,73 @@
 </ul>
 </li>
 </ul>
-<h2 id="t5marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898;">marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898; <a href="#t5marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898;"> # </a></h2>
+<h2 id="t6marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898;">marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898; <a href="#t6marging&#x7684;&#x517C;&#x5BB9;&#x95EE;&#x9898;"> # </a></h2>
 <ul>
 <li>marging-left&#x548C;marging-right&#x5728;ie6&#x4E2D;&#x4F1A;&#x53CC;&#x500D;</li>
 <li>&#x5F53;&#x5143;&#x7D20;&#x6D6E;&#x52A8;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6709;&#x5DE6;&#x53F3;&#x7684;&#x5916;&#x8FB9;&#x8DDD;&#xFF0C;&#x6709;&#x65F6;&#x5019;ie6&#x4F1A;&#x51FA;&#x73B0;&#x53CC;&#x500D;&#x8FB9;&#x8DDD;&#x7684;&#x95EE;&#x9898;</li>
-<li>&#x89E3;&#x51B3;&#x65B9;&#x6CD5; :<ul>
+<li><p>&#x89E3;&#x51B3;&#x65B9;&#x6CD5; :</p>
+<ul>
 <li>&#x7ED9;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;overflow:hidden;</li>
-<li>&#x5199;ie6&#x7684;&#x517C;&#x5BB9;&#x65B9;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;:
-```
-div{
+<li><p>&#x5199;ie6&#x7684;&#x517C;&#x5BB9;&#x65B9;&#x5F0F;&#xFF0C;&#x4F8B;&#x5982;:</p>
+<pre><code>div{
    float:left;
    margin-left:10px
    _margin-left:5px;  (&#x5F53;&#x6D4F;&#x89C8;&#x5668;&#x662F;ie6&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8BFB;&#x53D6;&#x8FD9;&#x53E5;&#x8BDD;)
-   } </li>
+   }
+</code></pre></li>
 </ul>
 </li>
-<li>!important &#x51FA;&#x73B0;&#x5728;css&#x91CC;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4F1A;&#x8986;&#x76D6;&#x6389;&#x6240;&#x6709;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;&#x7684;&#x6837;&#x5F0F;<strong>&#x9762;&#x8BD5;&#x9898;</strong></li>
+<li><p>!important &#x51FA;&#x73B0;&#x5728;css&#x91CC;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x4F1A;&#x8986;&#x76D6;&#x6389;&#x6240;&#x6709;&#x4E4B;&#x524D;&#x8BBE;&#x7F6E;&#x7684;&#x6837;&#x5F0F;<strong>&#x9762;&#x8BD5;&#x9898;</strong></p>
+</li>
 <li><a href="http://baike.baidu.com/item/css%20hack?fr=aladdin">css hack</a></li>
 </ul>
-<h2 id="t6overflow">overflow <a href="#t6overflow"> # </a></h2>
+<h2 id="t7overflow">overflow <a href="#t7overflow"> # </a></h2>
 <ul>
 <li>&#x76D2;&#x5B50;&#x5185;&#x5BB9;&#x591A;&#x4F59;&#x90E8;&#x5206;&#x7684;&#x5904;&#x7406;&#x65B9;&#x5F0F;</li>
 <li>overflow:hidden;&#x76F4;&#x63A5;&#x5C06;&#x591A;&#x4F59;&#x7684;&#x9690;&#x85CF;</li>
 <li>overflow:auto;&#x5982;&#x679C;&#x6709;&#x591A;&#x4F59;&#x90E8;&#x5206;&#x5C31;&#x4F1A;&#x51FA;&#x73B0;&#x6EDA;&#x52A8;&#x6761;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5C31;&#x4E0D;&#x51FA;&#x73B0;</li>
 <li>overflow:scroll;&#x4E0D;&#x8BBA;&#x662F;&#x5426;&#x6709;&#x591A;&#x4F59;&#x90E8;&#x5206;&#xFF0C;&#x90FD;&#x4F1A;&#x51FA;&#x73B0;&#x6EDA;&#x52A8;&#x6761;</li>
+</ul>
+<h2 id="t8&#x5728;&#x5E03;&#x5C40;&#x4E2D;&#x7528;css&#x5C5E;&#x6027;&#x5C06;&#x636E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x653E;&#x5230;&#x4E00;&#x884C;&#x6392;&#x5E03;">&#x5728;&#x5E03;&#x5C40;&#x4E2D;&#x7528;css&#x5C5E;&#x6027;&#x5C06;&#x636E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x653E;&#x5230;&#x4E00;&#x884C;&#x6392;&#x5E03; <a href="#t8&#x5728;&#x5E03;&#x5C40;&#x4E2D;&#x7528;css&#x5C5E;&#x6027;&#x5C06;&#x636E;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x653E;&#x5230;&#x4E00;&#x884C;&#x6392;&#x5E03;"> # </a></h2>
+<ul>
+<li>float:left/right;&#x76D2;&#x5B50;&#x53EF;&#x4EE5;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6216;&#x8005;&#x4ECE;&#x53F3;&#x5230;&#x5DE6;</li>
+<li><p>display:inline/inline-block/table</p>
+<ul>
+<li>inline:&#x76D2;&#x5B50;&#x4E0D;&#x80FD;&#x8BBE;&#x7F6E;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;</li>
+<li>inline-block:&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;&#x4F46;&#x662F;&#x53EA;&#x80FD;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;</li>
+<li>table:&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5BBD;&#x9AD8;&#x4F46;&#x662F;&#x53EA;&#x80FD;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;</li>
+<li>display:table;&#x7ED9;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;</li>
+<li>display:table-cell;&#x7ED9;&#x5B50;&#x7EA7;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;(&#x5355;&#x5143;&#x683C;)</li>
+</ul>
+</li>
+<li><p>&#x5F53;&#x884C;&#x5185;&#x5143;&#x7D20;&#x6216;&#x884C;&#x5185;&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x8BBE;&#x7F6E;line-height&#x4E0D;&#x751F;&#x6548;&#x7684;&#x65F6;&#x5019;,&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;display&#x5C5E;&#x6027;&#x503C;&#x8BBE;&#x7F6E;&#x4E3A;block</p>
+</li>
+<li>&#x5757;&#x7EA7;&#x5143;&#x7D20;&#x901A;&#x8FC7;display:inline-block;&#x8F6C;&#x5316;&#x540E;,ie7&#x4E0D;&#x4F1A;&#x8BC6;&#x522B;,&#x6240;&#x4EE5;&#x8981;&#x5728;display:inline-block;&#x4E4B;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;display:inline;</li>
+</ul>
+<h2 id="t9background">background <a href="#t9background"> # </a></h2>
+<ul>
+<li>&#x80CC;&#x666F;&#x6C38;&#x8FDC;&#x5728;&#x5185;&#x5BB9;&#x4E4B;&#x540E;</li>
+<li>background-image:(&quot;&quot;);&#x5F15;&#x5165;&#x80CC;&#x666F;&#x56FE;&#x7247;</li>
+<li>background-size;&#x63A7;&#x5236;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x5927;&#x5C0F;</li>
+<li>background-size:cover;&#x6539;&#x53D8;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x76D2;&#x5B50;&#x7684;&#x5BBD;&#x5EA6;&#x8BA9;&#x5B83;&#x4EEC;&#x4FDD;&#x6301;&#x4E00;&#x81F4;</li>
+<li>background-size:contain;&#x6539;&#x53D8;&#x56FE;&#x7247;&#x7684;&#x9AD8;&#x5EA6;&#x548C;&#x76D2;&#x5B50;&#x7684;&#x9AD8;&#x5EA6;&#x8BA9;&#x5B83;&#x4EEC;&#x4FDD;&#x6301;&#x4E00;&#x76F4;</li>
+<li>background-color;&#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x989C;&#x8272;(&#x4F1A;&#x5728;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x540E;&#x9762;)</li>
+<li>background-repeat;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x586B;&#x5145;&#x65B9;&#x5F0F;</li>
+<li>background-space;&#x53EA;&#x6709;&#x5728;&#x56FE;&#x7247;&#x5C0F;&#x4E8E;&#x76D2;&#x5B50;&#x7684;&#x65F6;&#x5019;&#x624D;&#x6709;&#x4F5C;&#x7528;</li>
+<li>background-position: 1px 2px;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;,&#x7B2C;&#x4E00;&#x4E2A;&#x503C;&#x662F;x&#x8F74;,&#x7B2C;&#x4E8C;&#x4E2A;&#x503C;&#x662F;y&#x8F74;</li>
+<li>background-position:center center;&#x8BA9;&#x56FE;&#x7247;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x548C;&#x76D2;&#x5B50;&#x7684;&#x4E2D;&#x5FC3;&#x70B9;&#x91CD;&#x5408;</li>
+<li>background-origin:content-box;&#x89C4;&#x5B9A;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;</li>
+</ul>
+<pre><code> background:yellow url(&quot;&#x56FE;&#x7247;&#x5730;&#x5740;&quot;) no-repeat10px 20px;
+</code></pre><ul>
+<li>background&#x7684;&#x7B80;&#x5199;,&#x5206;&#x522B;&#x5BF9;&#x5E94;&#x80CC;&#x666F;&#x989C;&#x8272;,&#x80CC;&#x666F;&#x56FE;&#x7247;,&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x586B;&#x5145;&#x65B9;&#x5F0F;,&#x80CC;&#x666F;&#x56FE;&#x7247;&#x7684;&#x5B9A;&#x4F4D;</li>
+</ul>
+<pre><code>height: 300px;background-color: yellow;
+            background-image: url(&quot;&#x56FE;&#x7247;1&#x5730;&#x5740;&quot;),url(&quot;&#x56FE;&#x7247;2&#x5730;&#x5740;&quot;);
+            background-repeat: no-repeat;
+            background-position: top center,right bottom;
+</code></pre><ul>
+<li>&#x540C;&#x65F6;&#x5F15;&#x5165;&#x4E24;&#x5F20;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x5E76;&#x5206;&#x522B;&#x5B9A;&#x4F4D;,&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;<strong>&#x4F4E;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;</strong>&#x4E0D;&#x652F;&#x6301;</li>
 </ul>
 
         <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
