@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li class="active"><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/函数表达式.html">函数表达式</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0CSS3">CSS3</a><ul><li><a href="#t1CSS3的概念和优势">CSS3的概念和优势</a></li><li><a href="#t2属性选择器">属性选择器</a></li><li><a href="#t3伪类选择器">伪类选择器</a><ul><li><a href="#t4nth选择器">nth选择器</a></li><li><a href="#t5否定选择器">否定选择器</a></li><li><a href="#t6根元素选择器">根元素选择器</a></li><li><a href="#t7target选择器">target选择器</a></li></ul></li><li><a href="#t8CSS3私有属性">CSS3私有属性</a></li><li><a href="#t9CSS3新增属性">CSS3新增属性</a><ul><li><a href="#t10text-shadow (文字阴影)">text-shadow (文字阴影)</a></li><li><a href="#t11box-shadow (盒子阴影)">box-shadow (盒子阴影)</a></li><li><a href="#t12border-raidus (设置圆角)">border-raidus (设置圆角)</a></li><li><a href="#t13border-image (图片边框)">border-image (图片边框)</a></li><li><a href="#t14word-break (自动换行)">word-break (自动换行)</a></li><li><a href="#t15background-clip (指定背景的显示范围)">background-clip (指定背景的显示范围)</a></li><li><a href="#t16background-origin (指定绘制背景图像时的起点)">background-origin (指定绘制背景图像时的起点)</a></li></ul></li><li><a href="#t17常用单位">常用单位</a></li><li><a href="#t18filter(滤镜)">filter(滤镜)</a></li><li><a href="#t19transform(2D转换)">transform(2D转换)</a><ul><li><a href="#t202D转换方法有以下几种：">2D转换方法有以下几种：</a></li><li><a href="#t21translate">translate</a></li><li><a href="#t22rotate">rotate</a></li><li><a href="#t23scale">scale</a></li><li><a href="#t24skew">skew</a></li></ul></li><li><a href="#t25transition (过渡属性)">transition (过渡属性)</a></li><li><a href="#t26animation（动画属性）">animation（动画属性）</a><ul><li><a href="#t27给元素添加动画效果">给元素添加动画效果</a></li></ul></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0CSS3">CSS3 <a href="#t0CSS3"> # </a></h1>
+<h2 id="t1CSS3&#x7684;&#x6982;&#x5FF5;&#x548C;&#x4F18;&#x52BF;">CSS3&#x7684;&#x6982;&#x5FF5;&#x548C;&#x4F18;&#x52BF; <a href="#t1CSS3&#x7684;&#x6982;&#x5FF5;&#x548C;&#x4F18;&#x52BF;"> # </a></h2>
+<ul>
+<li>css3&#x662F;css&#x89C4;&#x8303;&#x7684;&#x6700;&#x65B0;&#x7248;&#x672C;,&#x5728;css2.1&#x4E0A;&#x589E;&#x52A0;&#x4E86;&#x5F88;&#x591A;&#x5F3A;&#x5927;&#x7684;&#x65B0;&#x529F;&#x80FD;,&#x7528;&#x6765;&#x5E2E;&#x52A9;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x89E3;&#x51B3;&#x4E00;&#x4E9B;&#x95EE;&#x9898;,&#x5E76;&#x4E14;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x975E;&#x8BED;&#x4E49;&#x5316;&#x6807;&#x7B7E;,&#x590D;&#x6742;&#x7684;js&#x811A;&#x672C;&#x548C;&#x56FE;&#x7247;,&#x4F8B;&#x5982;&#x5706;&#x89D2;,&#x591A;&#x80CC;&#x666F;,&#x900F;&#x660E;&#x5EA6;,&#x9634;&#x5F71;&#x7B49;&#x7B49;</li>
+<li>css3&#x80FD;&#x8BA9;&#x9875;&#x9762;&#x6548;&#x679C;&#x770B;&#x8D77;&#x6765;&#x975E;&#x5E38;&#x70AB;&#x9177;,&#x7528;&#x6237;&#x4F53;&#x9A8C;&#x66F4;&#x9AD8;</li>
+<li>&#x6709;&#x5229;&#x4E8E;&#x5F00;&#x53D1;&#x548C;&#x7EF4;&#x62A4;,&#x8FD8;&#x80FD;&#x63D0;&#x9AD8;&#x7F51;&#x7AD9;&#x7684;&#x6027;&#x80FD;,&#x589E;&#x52A0;&#x7F51;&#x7AD9;&#x7684;&#x53EF;&#x8BBF;&#x95EE;&#x6027;,&#x53EF;&#x7528;&#x6027;</li>
+<li>&#x4F7F;&#x7F51;&#x7AD9;&#x80FD;&#x9002;&#x914D;&#x66F4;&#x591A;&#x7684;&#x8BBE;&#x5907;,&#x6709;&#x5229;&#x4E8E;Seo&#x7F51;&#x7AD9;&#x4F18;&#x5316;,&#x63D0;&#x9AD8;&#x7F51;&#x7AD9;&#x7684;&#x641C;&#x7D22;&#x6392;&#x540D;</li>
+</ul>
+<h2 id="t2&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;">&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668; <a href="#t2&#x5C5E;&#x6027;&#x9009;&#x62E9;&#x5668;"> # </a></h2>
+<ul>
+<li><p><code>E[arrt~=&quot;value&quot;]</code> &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;,&#x5E76;&#x4E14;&#x5177;&#x6709;&#x5C5E;&#x6027;&#x503C;,&#x6B64;&#x5C5E;&#x6027;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x8BCD;&#x5217;&#x8868;(&#x7C7B;&#x540D;),&#x5E76;&#x4E14;&#x4EE5;&#x7A7A;&#x683C;&#x9694;&#x5F00;,&#x5176;&#x4E2D;&#x8BCD;&#x5217;&#x8868;&#x4E2D;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;value&#x8BCD;,&#x6CE8;&#x610F;:&#x7B49;&#x53F7;&#x524D;&#x9762;&#x7684;~&#x4E0D;&#x80FD;&#x4E0D;&#x5199;</p>
+</li>
+<li><p><code>E[attr^=&quot;value&quot;]</code> &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;,&#x5E76;&#x4E14;&#x5177;&#x6709;&#x5C5E;&#x6027;&#x503C;,^&#x662F;&#x4EE5;&#x4EC0;&#x4E48;&#x4E3A;&#x5F00;&#x5934;&#x7684;,value&#x53EF;&#x4EE5;&#x662F;&#x666E;&#x901A;&#x5B57;&#x6BCD;&#x4E3A;&#x5F00;&#x5934;&#x6216;&#x8005;&#x7C7B;&#x4F3C;&#x7C7B;&#x540D;&#x5F00;&#x5934;</p>
+</li>
+<li><p><code>E(attr$=&quot;value&quot;]</code> &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;,&#x5E76;&#x4E14;&#x5177;&#x6709;&#x5C5E;&#x6027;&#x503C;,$&#x662F;&#x4EE5;&#x4EC0;&#x4E48;&#x4E3A;&#x7ED3;&#x5C3E;&#x7684;,value&#x53EF;&#x4EE5;&#x662F;&#x672B;&#x5C3E;&#x5B57;&#x6BCD;&#x4E3A;&#x7ED3;&#x5C3E;&#x6216;&#x8005;&#x662F;&#x7C7B;&#x540D;&#x7ED3;&#x5C3E;</p>
+</li>
+<li><p><code>E[attr*=&quot;value&quot;]</code> &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x5E76;&#x4E14;&#x6709;&#x5C5E;&#x6027;&#x503C;&#xFF0C;&#x800C;&#x4E14;&#x5C5E;&#x503C;&#x4E2D;&#x5305;&#x542B;&#x4E86;value&#xFF1B;&#x53EF;&#x4EE5;&#x662F;&#x4EFB;&#x610F;&#x4E00;&#x4E2A;&#x5B57;&#x6BCD;&#x6216;&#x8005;&#x6574;&#x4E2A;&#x5355;&#x8BCD;</p>
+</li>
+<li><p><code>E[attr|=&quot;value&quot;]</code> &#x6307;&#x5B9A;&#x5C5E;&#x6027;&#x540D;&#xFF0C;&#x5E76;&#x4E14;&#x5C5E;&#x6027;&#x503C;&#x662F;value&#x6216;&#x8005;&#x4EE5;&#x201C;value-&#x201D;&#x5F00;&#x5934;&#x7684;&#x503C;&#xFF08;&#x6BD4;&#x5982;&#x8BF4;zh-cn&#xFF09;;&#x53EA;&#x53EF;&#x4EE5;&#x662F;&#x4EE5;&#x6574;&#x4E2A;&#x5355;&#x8BCD;&#x6216;&#x8005;&#x5355;&#x8BCD;-</p>
+</li>
+</ul>
+<h2 id="t3&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;">&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668; <a href="#t3&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;"> # </a></h2>
+<h3 id="t4nth&#x9009;&#x62E9;&#x5668;">nth&#x9009;&#x62E9;&#x5668; <a href="#t4nth&#x9009;&#x62E9;&#x5668;"> # </a></h3>
+<ul>
+<li>&#x4F2A;&#x7C7B;&#x9009;&#x62E9;&#x5668;&#x7684;&#x6743;&#x91CD;&#x5927;&#x4E8E;10&#x5C0F;&#x4E8E;20</li>
+<li>:first-child &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:last-child &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:nth-child(length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E2A;&#x5B50;&#x5143;&#x7D20;,&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x4E0D;&#x80FD;&#x4E3A;&#x8D1F;&#x6570;,&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5199;n,&#x5219;&#x8868;&#x793A;&#x9009;&#x62E9;&#x5F53;&#x524D;&#x5143;&#x7D20;&#x7684;&#x6240;&#x6709;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:nth-child(n*length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;n&#x7684;&#x500D;&#x6570;&#x5E8F;&#x5217;&#x7684;&#x5B50;&#x5143;&#x7D20;,n&#x4ECE;0&#x5F00;&#x59CB;&#x8BA1;&#x7B97;,n&#x4EE3;&#x8868;&#x5168;&#x9009;,2n&#x4EE3;&#x8868;2&#x500D;,3n&#x4EE3;&#x8868;3&#x500D;</li>
+<li>:nth-child(n+length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x5E8F;&#x5217;&#x5927;&#x4E8E;lengh&#x540E;&#x9762;&#x7684;&#x5B50;&#x5143;&#x7D20;(&#x4E0D;&#x5305;&#x542B;length&#x672C;&#x8EAB;),&#x4ECE;&#x7B2C;length&#x4E2A;&#x5F00;&#x59CB;&#x8BA1;&#x7B97;,length&#x4ECE;0&#x5F00;&#x59CB;</li>
+<li>:nth-child(-n+length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x4E2D;&#x5C0F;&#x4E8E;&#x7B49;&#x4E8E;length&#x524D;&#x9762;&#x7684;&#x5B50;&#x5143;&#x7D20;(&#x5305;&#x542B;length),length&#x662F;&#x4ECE;0&#x5F00;&#x59CB;&#x7684;</li>
+<li>:nth-child(n*length+1) &#x5728;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x4E2D;&#x9694;&#x51E0;&#x9009;&#x4E00;,(3n+1)&#x5C31;&#x662F;&#x9694;&#x4E09;&#x9009;&#x4E00;,(4n+1)&#x5C31;&#x662F;&#x9694;&#x56DB;&#x9009;&#x4E00;</li>
+<li>:nth-of-type(length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x67D0;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:nth-last-of-type(length) &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x5012;&#x6570;&#x67D0;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:first-of-type &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:last-of-type &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x7684;&#x67D0;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;</li>
+<li>:only-child &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x5B50;&#x5143;&#x7D20;,&#x8FD9;&#x4E2A;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x8FD9;&#x4E00;&#x4E2A;&#x5B50;&#x5143;&#x7D20;,&#x5426;&#x5219;&#x9009;&#x62E9;&#x5668;&#x4E0D;&#x751F;&#x6548;</li>
+<li>:only-of-type &#x9009;&#x62E9;&#x6307;&#x5B9A;&#x7236;&#x5143;&#x7D20;&#x4E2D;&#x67D0;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;,&#x8FD9;&#x4E00;&#x7C7B;&#x5B50;&#x5143;&#x7D20;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;,&#x5426;&#x5219;&#x9009;&#x62E9;&#x5668;&#x4E0D;&#x751F;&#x6548;</li>
+<li>empty &#x9009;&#x62E9;&#x7684;&#x5143;&#x7D20;&#x4E2D;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5185;&#x5BB9;,&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x5185;&#x5BB9;&#x6307;&#x7684;&#x662F;&#x4E00;&#x70B9;&#x5185;&#x5BB9;&#x90FD;&#x6CA1;&#x6709;,&#x5305;&#x62EC;&#x7A7A;&#x683C;</li>
+</ul>
+<h3 id="t5&#x5426;&#x5B9A;&#x9009;&#x62E9;&#x5668;">&#x5426;&#x5B9A;&#x9009;&#x62E9;&#x5668; <a href="#t5&#x5426;&#x5B9A;&#x9009;&#x62E9;&#x5668;"> # </a></h3>
+<ul>
+<li>:not() &#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x5B9A;&#x4F4D;&#x4E0D;&#x5339;&#x914D;&#x8BE5;&#x9009;&#x62E9;&#x5668;&#x7684;&#x5143;&#x7D20;,&#x4F4E;&#x7248;&#x672C;(IE6~8)&#x4E0D;&#x652F;&#x6301;&#x8BE5;&#x9009;&#x62E9;&#x5668;</li>
+</ul>
+<h3 id="t6&#x6839;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;">&#x6839;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668; <a href="#t6&#x6839;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;"> # </a></h3>
+<ul>
+<li>:root &#x9009;&#x62E9;&#x6587;&#x6863;&#x7684;&#x6839;&#x5143;&#x7D20;,&#x5373;&#x4F4D;&#x4E8E;&#x6587;&#x6863;&#x6811;&#x4E2D;&#x6700;&#x9876;&#x5C42;&#x7ED3;&#x6784;&#x7684;&#x5143;&#x7D20;,&#x5728;HTML&#x9875;&#x9762;&#x4E2D;&#x5C31;&#x662F;&#x6307;&#x5305;&#x542B;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x7684;html&#x90E8;&#x5206;</li>
+</ul>
+<h3 id="t7target&#x9009;&#x62E9;&#x5668;">target&#x9009;&#x62E9;&#x5668; <a href="#t7target&#x9009;&#x62E9;&#x5668;"> # </a></h3>
+<ul>
+<li>:target &#x9009;&#x62E9;&#x5668;&#x53EF;&#x7528;&#x4E8E;&#x9009;&#x53D6;&#x5F53;&#x524D;&#x6D3B;&#x52A8;&#x7684;&#x76EE;&#x6807;&#x5143;&#x7D20;,&#x4F7F;&#x7528;&#x8BE5;&#x9009;&#x62E9;&#x5668;&#x6765;&#x5BF9;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x67D0;&#x4E2A;target&#x5143;&#x7D20;(&#x8BE5;&#x5143;&#x7D20;&#x7684;id&#x5F53;&#x4F5C;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x8D85;&#x94FE;&#x63A5;&#x6765;&#x4F7F;&#x7528;)&#x6307;&#x5B9A;&#x6837;&#x5F0F;,&#x8BE5;&#x6837;&#x5F0F;&#x53EA;&#x5728;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x4E86;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x8D85;&#x94FE;&#x63A5;,&#x5E76;&#x4E14;&#x8DF3;&#x8F6C;&#x5230;target&#x5143;&#x7D20;&#x540E;&#x8D77;&#x4F5C;&#x7528;</li>
+</ul>
+<h2 id="t8CSS3&#x79C1;&#x6709;&#x5C5E;&#x6027;">CSS3&#x79C1;&#x6709;&#x5C5E;&#x6027; <a href="#t8CSS3&#x79C1;&#x6709;&#x5C5E;&#x6027;"> # </a></h2>
+<ul>
+<li>css3&#x7684;&#x6D4F;&#x89C8;&#x5668;&#x79C1;&#x6709;&#x5C5E;&#x6027;&#x524D;&#x7F00;&#x662F;&#x4E00;&#x4E2A;&#x6D4F;&#x89C8;&#x5668;&#x5382;&#x5546;&#x7ECF;&#x5E38;&#x4F7F;&#x7528;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;,&#x5B83;&#x6697;&#x793A;&#x8BE5;css&#x5C5E;&#x6027;&#x6216;&#x89C4;&#x5219;&#x5C1A;&#x672A;&#x6210;&#x4E3A;W3C&#x6807;&#x51C6;&#x7684;&#x4E00;&#x90E8;&#x5206;</li>
+<li>W3C&#x5373;&#x4E07;&#x7EF4;&#x7F51;&#x8054;&#x76DF;,&#x5EFA;&#x4E8E;1994&#x5E74;,&#x662F;web&#x6280;&#x672F;&#x9886;&#x57DF;&#x6700;&#x5177;&#x6743;&#x5A01;&#x548C;&#x5F71;&#x54CD;&#x529B;&#x7684;&#x56FD;&#x9645;&#x4E2D;&#x7ACB;&#x6027;&#x6280;&#x672F;&#x6807;&#x51C6;&#x673A;&#x6784;,&#x662F;&#x5B83;&#x6210;&#x7ACB;&#x7684;&#x89C4;&#x8303;</li>
+<li>-webkit &#x8C37;&#x6B4C;</li>
+<li>-moz &#x706B;&#x72D0;</li>
+<li>-ms IE</li>
+<li>-o &#x6B27;&#x670B;</li>
+<li>-khtml &#x73B0;&#x5728;&#x57FA;&#x672C;&#x4E0D;&#x7528;&#x4E86;,&#x88AB;-webkit&#x6240;&#x53D6;&#x4EE3;</li>
+<li>css3&#x524D;&#x7F00;+&#x6807;&#x51C6;&#x4EE3;&#x7801;&#x7684;&#x987A;&#x5E8F;:&#x5148;&#x5199;&#x79C1;&#x6709;css3&#x5C5E;&#x6027;,&#x518D;&#x5199;&#x6807;&#x51C6;&#x7684;css3&#x5C5E;&#x6027;</li>
+<li>&#x5F53;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6210;&#x4E3A;&#x6807;&#x51C6;,&#x5E76;&#x4E14;&#x88AB;Firefox,Chrome&#x7B49;&#x6D4F;&#x89C8;&#x5668;&#x7684;&#x6700;&#x65B0;&#x7248;&#x666E;&#x904D;&#x517C;&#x5BB9;&#x7684;&#x65F6;&#x5019;,&#x5C31;&#x53EF;&#x4EE5;&#x53BB;&#x6389;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x7684;css3&#x524D;&#x7F00;</li>
+</ul>
+<h2 id="t9CSS3&#x65B0;&#x589E;&#x5C5E;&#x6027;">CSS3&#x65B0;&#x589E;&#x5C5E;&#x6027; <a href="#t9CSS3&#x65B0;&#x589E;&#x5C5E;&#x6027;"> # </a></h2>
+<h3 id="t10text-shadow (&#x6587;&#x5B57;&#x9634;&#x5F71;)">text-shadow (&#x6587;&#x5B57;&#x9634;&#x5F71;) <a href="#t10text-shadow (&#x6587;&#x5B57;&#x9634;&#x5F71;)"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;: text-shadow:h-shadow v-shadow blur color</li>
+<li>h-shadow: &#x5FC5;&#x987B;&#x5C5E;&#x6027;,&#x6C34;&#x5E73;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;,&#x4E3A;&#x6B63;&#x503C;&#x65F6;&#xFF0C;&#x9634;&#x5F71;&#x5728;&#x5BF9;&#x8C61;&#x7684;&#x53F3;&#x8FB9;&#xFF0C;&#x53CD;&#x4E4B;&#x9634;&#x5F71;&#x5728;&#x5BF9;&#x8C61;&#x7684;&#x5DE6;&#x8FB9;</li>
+<li>v-shadow: &#x5FC5;&#x987B;&#x5C5E;&#x6027;,&#x5782;&#x76F4;&#x9634;&#x5F71;&#x7684;&#x4F4D;&#x7F6E;,&#x4E3A;&#x6B63;&#x503C;&#x65F6;&#xFF0C;&#x9634;&#x5F71;&#x5728;&#x5BF9;&#x8C61;&#x7684;&#x5E95;&#x90E8;&#xFF0C;&#x53CD;&#x4E4B;&#x9634;&#x5F71;&#x5728;&#x5BF9;&#x8C61;&#x7684;&#x9876;&#x90E8;</li>
+<li>blur: &#x53EF;&#x9009;&#x5C5E;&#x6027;,&#x6A21;&#x7CCA;&#x7684;&#x8DDD;&#x79BB;,&#x8FD9;&#x4E2A;&#x503C;&#x53EA;&#x80FD;&#x662F;&#x6B63;&#x503C;</li>
+<li>color: &#x53EF;&#x9009;&#x5C5E;&#x6027;,&#x9634;&#x5F71;&#x7684;&#x989C;&#x8272;</li>
+<li>IE9&#x4EE5;&#x4E0B;&#x6D4F;&#x89C8;&#x5668;&#x4E0D;&#x652F;&#x6301;&#x8BE5;&#x5C5E;&#x6027;,&#x4E3A;&#x4E86;&#x8BA9;&#x4F4E;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;&#x517C;&#x5BB9;,&#x53EA;&#x80FD;&#x901A;&#x8FC7;&#x6EE4;&#x955C;filter:shadow&#x6765;&#x5904;&#x7406;</li>
+<li>&#x6EE4;&#x955C;&#x8BED;&#x6CD5;&#xFF1A;E {filter:shadow(Color=&#x989C;&#x8272;&#x503C;,Direction=&#x6570;&#x503C;,Strength=&#x6570;&#x503C;)},&#x5176;&#x4E2D;E&#x662F;&#x5143;&#x7D20;&#x9009;&#x62E9;&#x5668;&#xFF0C;Color&#x7528;&#x4E8E;&#x8BBE;&#x5B9A;&#x5BF9;&#x8C61;&#x7684;&#x9634;&#x5F71;&#x8272;&#xFF1B;Direction&#x7528;&#x4E8E;&#x8BBE;&#x5B9A;&#x6295;&#x5F71;&#x7684;&#x4E3B;&#x5411;&#xFF0C;&#x53D6;&#x503C;&#x4E3A;0&#x5373;&#x96F6;&#x5EA6;&#xFF08;&#x8868;&#x793A;&#x5411;&#x4E0A;&#x65B9;&#x5411;&#xFF09;&#xFF0C;45&#x4E3A;&#x53F3;&#x4E0A;&#xFF0C;90&#x4E3A;&#x53F3;&#xFF0C;135&#x4E3A;&#x53F3;&#x4E0B;&#xFF0C;180&#x4E3A;&#x4E0B;&#x65B9;&#xFF0C;225&#x4E3A;&#x5DE6;&#x4E0B;&#x65B9;&#xFF0C;270&#x4E3A;&#x5DE6;&#x65B9;&#xFF0C;315&#x4E3A;&#x5DE6;&#x4E0A;&#x65B9;&#xFF1B;Strength&#x5C31;&#x662F;&#x5F3A;&#x5EA6;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;text-shadow&#x4E2D;&#x7684;blur&#x503C;</li>
+</ul>
+<h3 id="t11box-shadow (&#x76D2;&#x5B50;&#x9634;&#x5F71;)">box-shadow (&#x76D2;&#x5B50;&#x9634;&#x5F71;) <a href="#t11box-shadow (&#x76D2;&#x5B50;&#x9634;&#x5F71;)"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;: box-shadow:length length length length color inset;</li>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9634;&#x5F71;&#x79BB;&#x5F00;&#x76D2;&#x5B50;&#x7684;&#x6A2A;&#x5411;&#x8DDD;&#x79BB;&#xFF08;x&#x8F74;&#x504F;&#x79FB;&#xFF09;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9634;&#x5F71;&#x79BB;&#x5F00;&#x76D2;&#x5B50;&#x7684;&#x7EB5;&#x5411;&#x8DDD;&#x79BB; &#xFF08;y&#x8F74;&#x504F;&#x79FB;&#xFF09;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9634;&#x5F71;&#x7684;&#x6A21;&#x7CCA;&#x534A;&#x5F84; &#xFF08;&#x9634;&#x5F71;&#x7684;&#x6A21;&#x7CCA;&#x5EA6;&#xFF09;</li>
+<li>&#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9634;&#x5F71;&#x7684;&#x5EF6;&#x4F38;&#x534A;&#x5F84; :&#x6A21;&#x7CCA;&#x8303;&#x56F4;&#xFF08;&#x53EF;&#x7701;&#x7565;&#xFF09;</li>
+<li>&#x7B2C;&#x4E94;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x9634;&#x5F71;&#x7684;&#x989C;&#x8272;</li>
+<li>&#x7B2C;&#x516D;&#x4E2A;&#x53C2;&#x6570;&#x8868;&#x793A;&#x662F;&#x5426;&#x4F7F;&#x7528;&#x5185;&#x9634;&#x5F71; &#xFF08;inset&#x662F;&#x5185;&#x9634;&#x5F71;&#xFF0C;&#x53EF;&#x7701;&#x7565;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;&#x5916;&#x9634;&#x5F71;&#xFF09;</li>
+</ul>
+<h3 id="t12border-raidus (&#x8BBE;&#x7F6E;&#x5706;&#x89D2;)">border-raidus (&#x8BBE;&#x7F6E;&#x5706;&#x89D2;) <a href="#t12border-raidus (&#x8BBE;&#x7F6E;&#x5706;&#x89D2;)"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;&#xFF1A;border-radius: none/initial(&#x9ED8;&#x8BA4;&#x503C;) |inherit(&#x7EE7;&#x627F;)|length|&#x767E;&#x5206;&#x6BD4;</li>
+<li>border-radius&#x662F;&#x4E00;&#x79CD;&#x7F29;&#x5199;&#x65B9;&#x6CD5;</li>
+<li>&#x56DB;&#x4E2A;&#x503C;&#x662F;&#x6309;&#x7167;(&#x4E0A;&#x53F3;&#x4E0B;&#x5DE6;)top-left&#x3001;top-right&#x3001;bottom-right&#x3001;bottom-left&#x987A;&#x5E8F;&#x6765;&#x8BBE;&#x7F6E;&#x7684;</li>
+</ul>
+<h3 id="t13border-image (&#x56FE;&#x7247;&#x8FB9;&#x6846;)">border-image (&#x56FE;&#x7247;&#x8FB9;&#x6846;) <a href="#t13border-image (&#x56FE;&#x7247;&#x8FB9;&#x6846;)"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;: border-image: url(&#x56FE;&#x7247;&#x5730;&#x5740;) &#x504F;&#x79FB;(&#x6570;&#x5B57;&#x6216;&#x8005;&#x767E;&#x5206;&#x6BD4;) round stretch;&#x540E;&#x9762;&#x4E24;&#x4E2A;&#x5C5E;&#x6027;&#x5206;&#x522B;&#x5BF9;&#x5E94;x&#x8F74;&#x548C;y&#x8F74;&#x5C5E;&#x6027;&#x662F;&#x62C9;&#x4F38;&#x6216;&#x8005;&#x5E73;&#x94FA;,&#x5982;&#x679C;&#x53EA;&#x5199;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x5219;&#x8868;&#x793A;xy&#x8F74;&#x5C5E;&#x6027;&#x76F8;&#x540C;</li>
+<li>border-image-source &#x7528;&#x5728;&#x8FB9;&#x6846;&#x7684;&#x56FE;&#x7247;&#x7684;&#x8DEF;&#x5F84;(url)</li>
+<li>border-image-slice &#x662F;&#x7528;&#x6765;&#x5206;&#x89E3;&#x5F15;&#x5165;&#x8FDB;&#x6765;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;,&#x56FE;&#x7247;&#x8FB9;&#x6846;&#x5411;&#x5185;&#x504F;&#x79FB;,&#x4E0A;&#x53F3;&#x4E0B;&#x5DE6;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x6392;</li>
+<li>border-image-repeat&#x56FE;&#x50CF;&#x8FB9;&#x6846;&#x662F;&#x5426;&#x5E94;&#x5E73;&#x94FA;(repeat)&#x3001;&#x94FA;&#x6EE1;(round)&#x6216;&#x62C9;&#x4F38;(stretch)</li>
+</ul>
+<h3 id="t14word-break (&#x81EA;&#x52A8;&#x6362;&#x884C;)">word-break (&#x81EA;&#x52A8;&#x6362;&#x884C;) <a href="#t14word-break (&#x81EA;&#x52A8;&#x6362;&#x884C;)"> # </a></h3>
+<ul>
+<li>&#x901A;&#x8FC7;&#x5BF9;&#x5176;&#x7684;&#x6307;&#x5B9A;&#xFF0C;&#x4E0D;&#x4EC5;&#x4EC5;&#x53EF;&#x4EE5;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x5B9E;&#x73B0;&#x534A;&#x89D2;&#x7A7A;&#x683C;&#x6216;&#x8FDE;&#x5B57;&#x7B26;&#x540E;&#x9762;&#x7684;&#x6362;&#x884C;&#xFF0C;&#x800C;&#x4E14;&#x53EF;&#x4EE5;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x5B9E;&#x73B0;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#x7684;&#x6362;&#x884C;</li>
+<li>normal&#xFF1A;&#x4F7F;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x6362;&#x884C;&#x89C4;&#x5219;</li>
+<li>keep-all&#xFF1A;&#x9047;&#x5230;&#x4E2D;&#x6587;&#x6807;&#x70B9;&#x7B26;&#x53F7;&#x6362;&#x884C;</li>
+<li>break-all&#xFF1A;&#x81EA;&#x52A8;&#x6362;&#x884C;</li>
+</ul>
+<h3 id="t15background-clip (&#x6307;&#x5B9A;&#x80CC;&#x666F;&#x7684;&#x663E;&#x793A;&#x8303;&#x56F4;)">background-clip (&#x6307;&#x5B9A;&#x80CC;&#x666F;&#x7684;&#x663E;&#x793A;&#x8303;&#x56F4;) <a href="#t15background-clip (&#x6307;&#x5B9A;&#x80CC;&#x666F;&#x7684;&#x663E;&#x793A;&#x8303;&#x56F4;)"> # </a></h3>
+<ul>
+<li>&#x5728;HTML&#x9875;&#x9762;&#x4E2D;&#xFF0C;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x80CC;&#x666F;&#x7684;&#x5143;&#x7D20;&#x901A;&#x5E38;&#x7531;&#x5143;&#x7D20;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5185;&#x90E8;&#x8865;&#x767D;&#xFF08;padding&#xFF09;&#xFF0C;&#x8FB9;&#x6846;(border)&#xFF0C;&#x5916;&#x90E8;&#x8865;&#x767D;&#xFF08;margin&#xFF09;&#x6784;&#x6210;</li>
+<li>border-box &#x80CC;&#x666F;&#x88AB;&#x88C1;&#x526A;&#x5230;&#x8FB9;&#x6846;&#x76D2;</li>
+<li>padding-box &#x80CC;&#x666F;&#x88AB;&#x88C1;&#x526A;&#x5230;&#x5185;&#x8FB9;&#x8DDD;&#x6846;</li>
+<li>content-box &#x80CC;&#x666F;&#x88AB;&#x88C1;&#x526A;&#x5230;&#x5185;&#x5BB9;&#x6846;</li>
+<li>background-clip&#x5C5E;&#x6027;&#x662F;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5143;&#x7D20;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF08;background-image&#xFF09;&#x7684;&#x5C55;&#x793A;&#x533A;&#x57DF;</li>
+<li>&#x8BE5;&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E86;&#x80CC;&#x666F;&#x5728;&#x54EA;&#x4E9B;&#x533A;&#x57DF;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#xFF0C;&#x4F46;&#x4E0E;&#x80CC;&#x666F;&#x5F00;&#x59CB;&#x7ED8;&#x5236;&#x7684;&#x4F4D;&#x7F6E;&#x65E0;&#x5173;&#xFF0C;&#x80CC;&#x666F;&#x7684;&#x7ED8;&#x5236;&#x7684;&#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x51FA;&#x73B0;&#x5728;&#x4E0D;&#x663E;&#x793A;&#x80CC;&#x666F;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x8FD9;&#x65F6;&#x5C31;&#x76F8;&#x5F53;&#x4E8E;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x88AB;&#x4E0D;&#x663E;&#x793A;&#x80CC;&#x666F;&#x7684;&#x533A;&#x57DF;&#x88C1;&#x526A;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#x4E00;&#x6837;</li>
+</ul>
+<h3 id="t16background-origin (&#x6307;&#x5B9A;&#x7ED8;&#x5236;&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x65F6;&#x7684;&#x8D77;&#x70B9;)">background-origin (&#x6307;&#x5B9A;&#x7ED8;&#x5236;&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x65F6;&#x7684;&#x8D77;&#x70B9;) <a href="#t16background-origin (&#x6307;&#x5B9A;&#x7ED8;&#x5236;&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x65F6;&#x7684;&#x8D77;&#x70B9;)"> # </a></h3>
+<ul>
+<li>padding-box&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x76F8;&#x5BF9;&#x4E8E;&#x5185;&#x8FB9;&#x8DDD;&#x6846;&#x6765;&#x5B9A;&#x4F4D;</li>
+<li>border-box&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x76F8;&#x5BF9;&#x4E8E;&#x8FB9;&#x6846;&#x76D2;&#x6765;&#x5B9A;&#x4F4D;</li>
+<li>content-box&#x80CC;&#x666F;&#x56FE;&#x50CF;&#x76F8;&#x5BF9;&#x4E8E;&#x5185;&#x5BB9;&#x6846;&#x6765;&#x5B9A;&#x4F4D;</li>
+<li>background-origin&#x5C5E;&#x6027;&#x662F;&#x7528;&#x6765;&#x63A7;&#x5236;&#x5143;&#x7D20;&#x80CC;&#x666F;&#x56FE;&#x7247;&#x5B9A;&#x4F4D;&#x70B9;&#xFF08;background-position&#xFF09;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;</li>
+<li>&#x8BE5;&#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x4E86;&#x80CC;&#x666F;&#x4ECE;&#x54EA;&#x4E2A;&#x533A;&#x57DF;(&#x8FB9;&#x6846;&#x3001;&#x8865;&#x767D;&#x6216;&#x5185;&#x5BB9;)&#x5F00;&#x59CB;&#x7ED8;&#x5236;,&#x4F46;&#x4E5F;&#x4EC5;&#x4EC5;&#x80FD;&#x63A7;&#x5236;&#x80CC;&#x666F;&#x5F00;&#x59CB;&#x7ED8;&#x5236;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x5728;&#x8FB9;&#x6846;&#x4E0A;&#x7ED8;&#x5236;&#x80CC;&#x666F;&#xFF0C;&#x4F46;&#x8FB9;&#x6846;&#x4E0A;&#x7684;&#x80CC;&#x666F;&#x663E;&#x4E0D;&#x663E;&#x793A;&#x51FA;&#x6765;&#x90A3;&#x5C31;&#x8981;&#x7531;background-clip&#x6765;&#x51B3;&#x5B9A;&#x4E86;</li>
+</ul>
+<h2 id="t17&#x5E38;&#x7528;&#x5355;&#x4F4D;">&#x5E38;&#x7528;&#x5355;&#x4F4D; <a href="#t17&#x5E38;&#x7528;&#x5355;&#x4F4D;"> # </a></h2>
+<ul>
+<li>px&#xFF08;&#x50CF;&#x7D20;&#xFF09;&#xFF1A;&#x7EDD;&#x5BF9;&#x5355;&#x4F4D;&#xFF0C;&#x9875;&#x9762;&#x6309;&#x7CBE;&#x786E;&#x50CF;&#x7D20;&#x5C55;&#x793A;&#xFF08;&#x5206;&#x8FA8;&#x7387;)</li>
+<li>em&#xFF08;&#x500D;&#x6570;&#xFF09;&#xFF1A;&#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#xFF0C;&#x57FA;&#x51C6;&#x70B9;&#x4E3A;&#x7236;&#x8282;&#x70B9;&#x5B57;&#x4F53;&#x7684;&#x5927;&#x5C0F;&#xFF0C;&#x5982;&#x679C;&#x81EA;&#x8EAB;&#x5B9A;&#x4E49;&#x4E86;font-size&#x6309;&#x81EA;&#x8EAB;&#x6765;&#x8BA1;&#x7B97;&#xFF08;&#x6D4F;&#x89C8;&#x5668;&#x9ED8;&#x8BA4;&#x5B57;&#x4F53;&#x662F;16px&#xFF09;&#xFF0C;&#x6574;&#x4E2A;&#x9875;&#x9762;&#x5185;1em&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x7684;&#x503C;</li>
+<li>rem&#xFF08;&#x500D;&#x6570;&#xFF09;&#xFF1A;&#x76F8;&#x5BF9;&#x5355;&#x4F4D;&#xFF0C;&#x53EF;&#x7406;&#x89E3;&#x4E3A;&#x201D;root em&#x201D;, &#x76F8;&#x5BF9;&#x6839;&#x8282;&#x70B9;html&#x7684;&#x5B57;&#x4F53;&#x5927;&#x5C0F;&#x6765;&#x8BA1;&#x7B97;&#xFF0C;CSS3&#x65B0;&#x52A0;&#x5C5E;&#x6027;&#xFF0C;chrome/firefox/IE9+&#x652F;&#x6301;(&#x53E6;&#x5916;&#x9700;&#x6CE8;&#x610F;chrome&#x5F3A;&#x5236;&#x6700;&#x5C0F;&#x5B57;&#x4F53;&#x4E3A;12&#x53F7;&#xFF0C;&#x5373;&#x4F7F;&#x8BBE;&#x7F6E;&#x6210;10px &#x6700;&#x7EC8;&#x90FD;&#x4F1A;&#x663E;&#x793A;&#x6210;12px&#xFF0C;&#x5F53;&#x628A;html&#x7684;font-size&#x8BBE;&#x7F6E;&#x6210;10px,&#x5B50;&#x8282;&#x70B9;rem&#x7684;&#x8BA1;&#x7B97;&#x8FD8;&#x662F;&#x4EE5;12px&#x4E3A;&#x57FA;&#x51C6;&#xFF0C;&#x6240;&#x4EE5;&#x7F51;&#x4E0A;&#x5F88;&#x591A;&#x6587;&#x7AE0;&#x63D0;&#x5230;&#x7684;&#x5C06;html&#x7684;font-size&#x8BBE;&#x4E3A;10&#x65B9;&#x4FBF;&#x8BA1;&#x7B97;&#x4E0D;&#x662F;&#x90A3;&#x4E48;&#x53EF;&#x53D6;)</li>
+<li>&#x767E;&#x5206;&#x6BD4;&#xFF08;%&#xFF09;&#xFF1A;&#x662F;&#x7236;&#x7EA7;&#x5143;&#x7D20;&#x5BBD;&#x5EA6;&#x6216;&#x8005;&#x9AD8;&#x5EA6;&#x7684;&#x767E;&#x5206;&#x4E4B;&#x591A;&#x5C11;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x7EDD;&#x5BF9;&#x5B9A;&#x4F4D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x662F;&#x53C2;&#x7167;&#x7269;&#x7684;&#x767E;&#x5206;&#x4E4B;&#x591A;&#x5C11;</li>
+</ul>
+<h2 id="t18filter(&#x6EE4;&#x955C;)">filter(&#x6EE4;&#x955C;) <a href="#t18filter(&#x6EE4;&#x955C;)"> # </a></h2>
+<ul>
+<li>opacity(0~100%) &#x56FE;&#x7247;&#x900F;&#x660E;&#x5EA6;</li>
+<li>blur(px) &#x56FE;&#x7247;&#x6A21;&#x7CCA;&#x5EA6;</li>
+<li>brightness(0~100%) &#x56FE;&#x7247;&#x4EAE;&#x5EA6;</li>
+<li>contrast(0~100%) &#x56FE;&#x7247;&#x5BF9;&#x6BD4;&#x5EA6;</li>
+<li>grayscale(0~100%) &#x56FE;&#x7247;&#x7070;&#x5EA6;</li>
+<li>hue-rotate(0~360deg) &#x8272;&#x76F8;&#x65CB;&#x8F6C;</li>
+<li>invert(0~100%) &#x7FFB;&#x8F6C;&#x8F93;&#x5165;&#x56FE;&#x50CF;</li>
+<li>saturate(0~100%) &#x8F6C;&#x6362;&#x56FE;&#x50CF;&#x9971;&#x548C;&#x5EA6;</li>
+<li>sepia(0~100%) &#x5C06;&#x56FE;&#x7247;&#x8F6C;&#x6362;&#x4E3A;&#x6DF1;&#x8910;&#x8272;</li>
+<li>drop-shadow(x&#x8F74;&#x6570;&#x503C;,y&#x8F74;&#x6570;&#x503C;,&#x6A21;&#x7CCA;&#x534A;&#x5F84;(&#x4E0D;&#x5141;&#x8BB8;&#x8D1F;&#x503C;),&#x9634;&#x5F71;&#x6269;&#x5F20;&#x8303;&#x56F4;,&#x989C;&#x8272;) &#x7ED9;&#x56FE;&#x50CF;&#x8BBE;&#x7F6E;&#x9634;&#x5F71;&#x6548;&#x679C;</li>
+</ul>
+<h2 id="t19transform(2D&#x8F6C;&#x6362;)">transform(2D&#x8F6C;&#x6362;) <a href="#t19transform(2D&#x8F6C;&#x6362;)"> # </a></h2>
+<ul>
+<li>&#x901A;&#x8FC7;CSS3&#x8F6C;&#x6362;&#xFF0C;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x5BF9;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x79FB;&#x52A8;&#x3001;&#x7F29;&#x653E;&#x3001;&#x8F6C;&#x52A8;&#x3001;&#x62C9;&#x957F;&#x6216;&#x62C9;&#x4F38;,&#x8F6C;&#x6362;&#x662F;&#x4F7F;&#x5143;&#x7D20;&#x6539;&#x53D8;&#x5F62;&#x72B6;&#x3001;&#x5C3A;&#x5BF8;&#x548C;&#x4F4D;&#x7F6E;&#x7684;&#x4E00;&#x79CD;&#x6548;&#x679C;</li>
+<li>IE10+,Firefox,Opear&#x90FD;&#x652F;&#x6301;transform&#x5C5E;&#x6027;,Chrome&#x548C;Safari&#x9700;&#x8981;&#x524D;&#x7F00;-webkit-,IE9&#x9700;&#x8981;&#x524D;&#x7F00;-ms-</li>
+</ul>
+<h3 id="t202D&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;">2D&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A; <a href="#t202D&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;"> # </a></h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x5C5E;&#x6027;&#x503C;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">translate()</td>
+<td>&#x5143;&#x7D20;&#x4ECE;&#x5176;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x79FB;&#x52A8;&#xFF0C;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;left(x&#x5750;&#x6807;)&#x548C;top(y&#x5750;&#x6807;)&#x4F4D;&#x7F6E;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">rotate()</td>
+<td>&#x5143;&#x7D20;&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;&#x7ED9;&#x5B9A;&#x7684;&#x89D2;&#x5EA6;,&#x5141;&#x8BB8;&#x8D1F;&#x503C;&#xFF0C;&#x5143;&#x7D20;&#x5C06;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;</td>
+</tr>
+<tr>
+<td style="text-align:left">scale()</td>
+<td>&#x5143;&#x7D20;&#x7684;&#x5C3A;&#x5BF8;&#x4F1A;&#x589E;&#x52A0;&#x6216;&#x51CF;&#x5C11;&#xFF0C;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x5BBD;&#x5EA6;(X&#x8F74;)&#x548C;&#x9AD8;&#x5EA6;(Y&#x8F74;)&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">skew()</td>
+<td>&#x5143;&#x7D20;&#x7FFB;&#x8F6C;&#x7ED9;&#x5B9A;&#x7684;&#x89D2;&#x5EA6;&#xFF0C;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x6C34;&#x5E73;&#x7EBF;(X&#x8F74;)&#x548C;&#x5782;&#x76F4;&#x7EBF;(Y&#x8F74;)&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td style="text-align:left">matrix()</td>
+<td>&#x628A;&#x6240;&#x6709;2D&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#x7EC4;&#x5408;&#x5728;&#x4E00;&#x8D77;,&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x9700;&#x8981;&#x516D;&#x4E2A;&#x53C2;&#x6570;&#xFF0C;&#x5305;&#x542B;&#x6570;&#x5B66;&#x51FD;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x505A;&#x5230;&#x65CB;&#x8F6C;&#x3001;&#x7F29;&#x653E;&#x3001;&#x79FB;&#x52A8;&#x4EE5;&#x53CA;&#x503E;&#x659C;&#x5143;&#x7D20;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="t21translate">translate <a href="#t21translate"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;:transform: translate(50px,100px),x&#x8F74;&#x79FB;&#x52A8;50&#x50CF;&#x7D20;,y&#x8F74;&#x79FB;&#x52A8;100&#x50CF;&#x7D20;</li>
+<li>&#x5143;&#x7D20;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;left(x&#x8F74;)&#x548C;top(y&#x8F74;)&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x79FB;&#x52A8;</li>
+<li>&#x5355;&#x4F4D;:px</li>
+</ul>
+<h3 id="t22rotate">rotate <a href="#t22rotate"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;:transform: rotate(30deg),&#x5143;&#x7D20;&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;30&#x5EA6;</li>
+<li>&#x5143;&#x7D20;&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#x8FDB;&#x884C;&#x987A;&#x65F6;&#x9488;&#x65CB;&#x8F6C;,&#x5982;&#x679C;&#x7ED9;&#x5B9A;&#x7684;&#x503C;&#x4E3A;&#x8D1F;&#x503C;&#x65F6;&#x5219;&#x9006;&#x65F6;&#x9488;&#x65CB;&#x8F6C;</li>
+<li>&#x5355;&#x4F4D;:deg</li>
+<li>transform:rotateX(0~360deg) &#x56F4;&#x7ED5;X&#x8F74;&#x65CB;&#x8F6C;</li>
+<li>transform:rotateY(0~360deg) &#x56F4;&#x7ED5;Y&#x8F74;&#x65CB;&#x8F6C;</li>
+<li>transform:rotate3D(X,Y,Z,deg) 3D&#x65CB;&#x8F6C;</li>
+</ul>
+<h3 id="t23scale">scale <a href="#t23scale"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;:transform: scale(2,4),&#x5143;&#x7D20;&#x5BBD;&#x5EA6;&#x653E;&#x5927;&#x4E3A;&#x539F;&#x5C3A;&#x5BF8;&#x4E24;&#x500D;,&#x9AD8;&#x5EA6;&#x653E;&#x5927;&#x4E3A;&#x539F;&#x5C3A;&#x5BF8;4&#x500D;</li>
+<li>&#x6839;&#x636E;&#x7ED9;&#x5B9A;&#x7684;&#x5BBD;&#x5EA6;(x&#x8F74;)&#x548C;&#x9AD8;&#x5EA6;(y&#x8F74;)&#x53C2;&#x6570;,&#x5143;&#x7D20;&#x7684;&#x5C3A;&#x5BF8;&#x4F1A;&#x653E;&#x5927;&#x6216;&#x8005;&#x7F29;&#x5C0F;</li>
+</ul>
+<h3 id="t24skew">skew <a href="#t24skew"> # </a></h3>
+<ul>
+<li>&#x8BED;&#x6CD5;:transform: skew(30deg,20deg),&#x5143;&#x7D20;&#x56F4;&#x7ED5;x&#x8F74;&#x7FFB;&#x8F6C;30&#x5EA6;,&#x56F4;&#x7ED5;y&#x8F74;&#x7FFB;&#x8F6C;20&#x5EA6;</li>
+<li>skewX():x&#x8F74;&#x626D;&#x66F2;&#x53D8;&#x5F62;(&#x4F7F;&#x5143;&#x7D20;&#x5728;&#x6C34;&#x5E73;&#x65B9;&#x5411;&#x626D;&#x66F2;&#x53D8;&#x5F62;)</li>
+<li>skewY():y&#x8F74;&#x626D;&#x66F2;&#x53D8;&#x5F62;(&#x4F7F;&#x5143;&#x7D20;&#x5728;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x626D;&#x66F2;&#x53D8;&#x5F62;)</li>
+<li>skew(x,y):&#x4F7F;&#x5143;&#x7D20;&#x5728;&#x6C34;&#x5E73;&#x548C;&#x5782;&#x76F4;&#x65B9;&#x5411;&#x540C;&#x65F6;&#x626D;&#x66F2;&#x53D8;&#x5F62;</li>
+</ul>
+<h2 id="t25transition (&#x8FC7;&#x6E21;&#x5C5E;&#x6027;)">transition (&#x8FC7;&#x6E21;&#x5C5E;&#x6027;) <a href="#t25transition (&#x8FC7;&#x6E21;&#x5C5E;&#x6027;)"> # </a></h2>
+<ul>
+<li>&#x7B2C;&#x4E00;&#x4E2A;&#x503C;: &#x8981;&#x8FC7;&#x5EA6;&#x7684;css&#x5C5E;&#x6027;</li>
+<li>&#x7B2C;&#x4E8C;&#x4E2A;&#x503C;: &#x8FC7;&#x5EA6;&#x6240;&#x9700;&#x65F6;&#x95F4;</li>
+<li>&#x7B2C;&#x4E09;&#x4E2A;&#x503C;: &#x8FC7;&#x5EA6;&#x65B9;&#x5F0F;</li>
+<li>&#x7B2C;&#x56DB;&#x4E2A;&#x503C;: &#x8FC7;&#x6E21;&#x5EF6;&#x8FDF;&#x65F6;&#x95F4;(&#x8FC7;&#x591A;&#x5C11;&#x65F6;&#x95F4;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x8FC7;&#x6E21;&#x6548;&#x679C;)</li>
+<li>&#x4E00;&#x4E2A;&#x8FC7;&#x6E21;&#x5C5E;&#x6027;&#x652F;&#x6301;&#x591A;&#x79CD;&#x8FC7;&#x6E21;&#x6837;&#x5F0F;,&#x4E0D;&#x540C;&#x6837;&#x5F0F;&#x95F4;&#x4EE5;&#x9017;&#x53F7;&#x9694;&#x5F00;</li>
+</ul>
+<h2 id="t26animation&#xFF08;&#x52A8;&#x753B;&#x5C5E;&#x6027;&#xFF09;">animation&#xFF08;&#x52A8;&#x753B;&#x5C5E;&#x6027;&#xFF09; <a href="#t26animation&#xFF08;&#x52A8;&#x753B;&#x5C5E;&#x6027;&#xFF09;"> # </a></h2>
+<h3 id="t27&#x7ED9;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x52A8;&#x753B;&#x6548;&#x679C;">&#x7ED9;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x52A8;&#x753B;&#x6548;&#x679C; <a href="#t27&#x7ED9;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x52A8;&#x753B;&#x6548;&#x679C;"> # </a></h3>
+<ul>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x52A8;&#x753B;,&#x4ECE;&#x5F00;&#x59CB;&#x5230;&#x7ED3;&#x675F;</li>
+<li>&#x7ED9;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6DFB;&#x52A0;&#x4E0A;&#x8FD9;&#x4E2A;&#x52A8;&#x753B;,&#x5E76;&#x4E14;&#x5B9A;&#x4E49;&#x8FD9;&#x4E2A;&#x52A8;&#x753B;&#x7684;&#x4E00;&#x4E9B;&#x5C5E;&#x6027;,&#x4F8B;&#x5982;&#x65F6;&#x95F4;,&#x8FD0;&#x52A8;&#x65B9;&#x5F0F;,&#x6267;&#x884C;&#x6B21;&#x6570;&#x7B49;&#x7B49;</li>
+</ul>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
