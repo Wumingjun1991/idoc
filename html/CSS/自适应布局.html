@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li class="active"><a href="../../html/CSS/自适应布局.html">自适应布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/函数表达式.html">函数表达式</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0自适应布局">自适应布局</a><ul><li><a href="#t1媒体查询">媒体查询</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;">&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40; <a href="#t0&#x81EA;&#x9002;&#x5E94;&#x5E03;&#x5C40;"> # </a></h1>
+<h2 id="t1&#x5A92;&#x4F53;&#x67E5;&#x8BE2;">&#x5A92;&#x4F53;&#x67E5;&#x8BE2; <a href="#t1&#x5A92;&#x4F53;&#x67E5;&#x8BE2;"> # </a></h2>
+<ul>
+<li>&#x5A92;&#x4F53;&#x67E5;&#x8BE2;&#x662F;&#x6307;&#x901A;&#x8FC7;&#x4E00;&#x5B9A;&#x7684;&#x8BED;&#x6CD5;,&#x67E5;&#x8BE2;&#x6D4F;&#x89C8;&#x5668;&#x53EF;&#x89C6;&#x533A;&#x57DF;&#x7684;&#x5BBD;&#x5EA6;&#x6216;&#x8005;&#x9AD8;&#x5EA6;,&#x901A;&#x8FC7;&#x533A;&#x5206;&#x5BBD;&#x9AD8;&#x6765;&#x8FDB;&#x884C;&#x540C;&#x4E00;&#x4E2A;html&#x6587;&#x4EF6;&#x591A;&#x4E2A;css&#x6837;&#x5F0F;&#x7684;&#x6DFB;&#x52A0;</li>
+<li>&#x5148;&#x5199;&#x9ED8;&#x8BA4;&#x6837;&#x5F0F;&#x7684;css&#x4EE3;&#x7801;,&#x518D;&#x5199;&#x9700;&#x8981;&#x67E5;&#x8BE2;&#x65F6;&#x7684;css&#x4EE3;&#x7801;</li>
+</ul>
+<pre><code>
+ &lt;style&gt;
+        div {
+            height: 300px;
+            background-color: greenyellow;
+        }
+
+        @media screen and (max-width: 500px) {
+            div {
+                height: 600px;
+                background-color: pink;
+            }
+
+        }
+    &lt;/style&gt;
+</code></pre><ul>
+<li>&#x901A;&#x8FC7;link&#x5143;&#x7D20;&#x67E5;&#x8BE2;&#x5A92;&#x4F53;&#x7684;&#x5BBD;&#x5EA6;&#x548C;&#x9AD8;&#x5EA6;,&#x53EF;&#x4EE5;&#x5207;&#x6362;&#x4E0D;&#x540C;&#x7684;css&#x6587;&#x4EF6;</li>
+</ul>
+<pre><code>
+&lt;link rel=&quot;stylesheet&quot; media=&quot;mediatype and|not|only (media feature)&quot; href=&quot;mystylesheet.css&quot;&gt;
+</code></pre><ul>
+<li>&#x7ED3;&#x5408;CSS&#x5A92;&#x4F53;&#x67E5;&#x8BE2;,&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x9002;&#x5E94;&#x4E0D;&#x540C;&#x8BBE;&#x5907;&#x7684;&#x65B9;&#x5411;(&#x6A2A;&#x5C4F;landscape&#x3001;&#x7AD6;&#x5C4F;portrait&#x7B49;)&#x7684;&#x5E03;&#x5C40;</li>
+<li>&#x8BED;&#x6CD5;:orientation&#xFF1A;portrait | landscape</li>
+<li>portrait&#xFF1A;&#x6307;&#x5B9A;&#x8F93;&#x51FA;&#x8BBE;&#x5907;&#x4E2D;&#x7684;&#x9875;&#x9762;&#x53EF;&#x89C1;&#x533A;&#x57DF;&#x9AD8;&#x5EA6;&#x5927;&#x4E8E;&#x6216;&#x7B49;&#x4E8E;&#x5BBD;&#x5EA6;</li>
+<li>landscape&#xFF1A; &#x9664;portrait&#x503C;&#x60C5;&#x51B5;&#x5916;&#xFF0C;&#x90FD;&#x662F;landscape</li>
+<li>&#x5B9E;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code>
+  @media only screen and (orientation: landscape) {
+      body {
+          background-color: lightblue;
+      }
+  }
+</code></pre>
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
