@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/JS中的函数.html">JS中的函数</a></li><li><a href="../../html/Javascript/数据类型之数组.html">数据类型之数组</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li class="active"><a href="../../html/Javascript/数据类型中的常用方法.html">数据类型中的常用方法</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0各种数据类型中的常用方法">各种数据类型中的常用方法</a><ul><li><a href="#t1String数据类型的常用方法">String数据类型的常用方法</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5; <a href="#t0&#x5404;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E2D;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"> # </a></h1>
+<h2 id="t1String&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">String&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5; <a href="#t1String&#x6570;&#x636E;&#x7C7B;&#x578B;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;"> # </a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x540D;&#x79F0;</th>
+<th>&#x63CF;&#x8FF0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">charAt(&#x7D22;&#x5F15;)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x4F4D;&#x7F6E;&#x7684;&#x5B57;&#x7B26;,&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x5F53;&#x524D;&#x7D22;&#x5F15;&#x5BF9;&#x5E94;&#x7684;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">charCodeAt(&#x7D22;&#x5F15;)</td>
+<td>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;&#x5B57;&#x7B26;&#x5BF9;&#x5E94;&#x7684;ASCII&#x503C;(Unicode&#x7F16;&#x7801;)</td>
+</tr>
+<tr>
+<td style="text-align:left">substr(n,m)</td>
+<td>&#x4ECE;&#x7D22;&#x5F15;n&#x5F00;&#x59CB;,&#x622A;&#x53D6;m&#x4E2A;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">substring(n,m)</td>
+<td>&#x4ECE;&#x7D22;&#x5F15;n&#x5F00;&#x59CB;&#x622A;&#x53D6;&#x5230;&#x7D22;&#x5F15;m,&#x5305;&#x542B;n&#x4E0D;&#x5305;&#x542B;m</td>
+</tr>
+<tr>
+<td style="text-align:left">slice(n,m)</td>
+<td>&#x4ECE;&#x7D22;&#x5F15;n&#x5F00;&#x59CB;&#x622A;&#x53D6;&#x5230;&#x7D22;&#x5F15;m,&#x4E0D;&#x5305;&#x542B;m,&#x4F46;&#x662F;&#x6B64;&#x65B9;&#x6CD5;&#x652F;&#x6301;&#x53C2;&#x6570;&#x4E3A;&#x8D1F;&#x503C;(str.length+&#x8D1F;&#x6570;&#x7D22;&#x5F15;)</td>
+</tr>
+<tr>
+<td style="text-align:left">indexOf(&apos;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&apos;)</td>
+<td>&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x6240;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7D22;&#x5F15;&#x503C;,&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x8BE5;&#x5B57;&#x7B26;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x4F4D;&#x7F6E;&#x7684;&#x7D22;&#x5F15;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">lastindexOf(&apos;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&apos;)</td>
+<td>&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x6240;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7D22;&#x5F15;&#x503C;,&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x8BE5;&#x5B57;&#x7B26;&#x6700;&#x540E;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x4F4D;&#x7F6E;&#x7684;&#x7D22;&#x5F15;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">str.toUpperCase()</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x8F6C;&#x5316;&#x4E3A;&#x5927;&#x5199;</td>
+</tr>
+<tr>
+<td style="text-align:left">str.toLowerCase()</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;&#x5B57;&#x6BCD;&#x8F6C;&#x5316;&#x4E3A;&#x5C0F;&#x5199;</td>
+</tr>
+<tr>
+<td style="text-align:left">replace(oldword,newword)</td>
+<td>&#x66FF;&#x6362;,&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x539F;&#x5B57;&#x7B26;&#x4E32;,&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x65B0;&#x5B57;&#x7B26;&#x4E32;,&#x53EA;&#x80FD;&#x66FF;&#x6362;&#x7B2C;&#x4E00;&#x6B21;&#x9047;&#x5230;&#x7684;&#x5B57;&#x7B26;,&#x5982;&#x679C;&#x540E;&#x9762;&#x8FD8;&#x6709;&#x76F8;&#x540C;&#x7684;&#x5B57;&#x7B26;&#x662F;&#x4E0D;&#x80FD;&#x66FF;&#x6362;&#x540E;&#x9762;&#x7684;&#x5B57;&#x7B26;</td>
+</tr>
+<tr>
+<td style="text-align:left">search(&apos;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&apos;)</td>
+<td>&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x6240;&#x5728;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x7D22;&#x5F15;&#x503C;</td>
+</tr>
+<tr>
+<td style="text-align:left">match(&apos;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&apos;)</td>
+<td>&#x67E5;&#x627E;&#x6307;&#x5B9A;&#x5B57;&#x7B26;&#x6240;&#x5728;&#x7684;&#x4F4D;&#x7F6E;,&#x8FD4;&#x56DE;&#x503C;&#x4E3A;[&apos;&#x6307;&#x5B9A;&#x7684;&#x5B57;&#x7B26;&apos;,index:&#x5B57;&#x7B26;&#x7684;&#x7D22;&#x5F15;,input:&apos;&#x88AB;&#x67E5;&#x627E;&#x7684;&#x539F;&#x5B57;&#x7B26;&apos;],&#x5982;&#x679C;&#x627E;&#x4E0D;&#x5230;&#x8FD4;&#x56DE;null</td>
+</tr>
+<tr>
+<td style="text-align:left">split(&apos;&#x5206;&#x9694;&#x7B26;&apos;)</td>
+<td>&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x5206;&#x9694;&#x7B26;&#x4EA7;&#x751F;&#x6210;&#x6570;&#x7EC4;,&#x5206;&#x9694;&#x7B26;&#x4E0D;&#x4F1A;&#x51FA;&#x73B0;&#x5728;&#x6570;&#x7EC4;&#x4E2D;,&#x5982;&#x679C;&#x4E0D;&#x4F20;&#x5165;&#x5206;&#x9694;&#x7B26;,&#x5219;&#x4F1A;&#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x90FD;&#x5206;&#x9694;&#x5F00;,&#x4F1A;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x5F53;&#x4F5C;&#x6574;&#x4F53;&#x4E00;&#x9879;</td>
+</tr>
+</tbody>
+</table>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
