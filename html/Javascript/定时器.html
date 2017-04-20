@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li class="active"><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0定时器">定时器</a><ul><li><a href="#t1作用">作用</a></li><li><a href="#t2定时器分类">定时器分类</a></li><li><a href="#t3清除定时器">清除定时器</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x5B9A;&#x65F6;&#x5668;">&#x5B9A;&#x65F6;&#x5668; <a href="#t0&#x5B9A;&#x65F6;&#x5668;"> # </a></h1>
+<h2 id="t1&#x4F5C;&#x7528;">&#x4F5C;&#x7528; <a href="#t1&#x4F5C;&#x7528;"> # </a></h2>
+<ul>
+<li>&#x60F3;&#x8981;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x6309;&#x7167;&#x6307;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x91CD;&#x590D;&#x6267;&#x884C;,&#x6216;&#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;&#x6267;&#x884C;&#x4E00;&#x6B21;,&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x5B9A;&#x65F6;&#x5668;</li>
+</ul>
+<h2 id="t2&#x5B9A;&#x65F6;&#x5668;&#x5206;&#x7C7B;">&#x5B9A;&#x65F6;&#x5668;&#x5206;&#x7C7B; <a href="#t2&#x5B9A;&#x65F6;&#x5668;&#x5206;&#x7C7B;"> # </a></h2>
+<ul>
+<li>&#x5B9A;&#x65F6;&#x5668;&#x662F;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x51FD;&#x6570;,&#x91CC;&#x9762;&#x9700;&#x8981;&#x4F20;&#x5165;&#x4E24;&#x4E2A;&#x53C2;&#x6570;,&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;(&#x60F3;&#x8981;&#x6267;&#x884C;&#x7684;&#x51FD;&#x6570;),&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x65F6;&#x95F4;(&#x8FC7;&#x591A;&#x4E45;&#x6267;&#x884C;&#x4E00;&#x6B21;,&#x6216;&#x591A;&#x6B21;&#x6267;&#x884C;)</li>
+<li>&#x65F6;&#x95F4;&#x53C2;&#x6570;&#x90FD;&#x662F;&#x4EE5;&#x6BEB;&#x79D2;&#x4E3A;&#x5355;&#x4F4D;,1s=1000ms</li>
+<li>&#x5B9A;&#x65F6;&#x5668;&#x662F;window&#x7684;&#x65B9;&#x6CD5;,window&#x53EF;&#x4EE5;&#x7701;&#x7565;</li>
+<li>window.setInterval(function(){},[interval]): &#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;,&#x6BCF;&#x95F4;&#x9694;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x90FD;&#x4F1A;&#x6267;&#x884C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;</li>
+<li>window.setTimeout(function()){},[interval]): &#x6307;&#x5B9A;&#x4E00;&#x4E2A;&#x65F6;&#x95F4;,&#x5230;&#x8FBE;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;,&#x65B9;&#x6CD5;&#x6267;&#x884C;&#x4E00;&#x6B21;,&#x5C31;&#x4E0D;&#x4F1A;&#x518D;&#x6267;&#x884C;&#x4E86;</li>
+<li>&#x5B9A;&#x65F6;&#x5668;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x5B57;,&#x8FD9;&#x4E2A;&#x6570;&#x5B57;&#x4EE3;&#x8868;&#x5F53;&#x524D;&#x662F;&#x7B2C;&#x51E0;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;,&#x4E0D;&#x533A;&#x5206;interval&#x548C;timeout</li>
+</ul>
+<h2 id="t3&#x6E05;&#x9664;&#x5B9A;&#x65F6;&#x5668;">&#x6E05;&#x9664;&#x5B9A;&#x65F6;&#x5668; <a href="#t3&#x6E05;&#x9664;&#x5B9A;&#x65F6;&#x5668;"> # </a></h2>
+<ul>
+<li>&#x7528;&#x4EC0;&#x4E48;&#x5B9A;&#x65F6;&#x5668;,&#x90FD;&#x53EF;&#x4EE5;&#x4EFB;&#x9009;&#x4E0B;&#x9762;&#x4EFB;&#x610F;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x6E05;&#x9664;</li>
+<li>clearTimeout</li>
+<li>clearInterval</li>
+</ul>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
