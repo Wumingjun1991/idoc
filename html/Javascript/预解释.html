@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li class="active"><a href="../../html/Javascript/预解释.html">预解释</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Idoc.html">Idoc</a></li><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0预解释(变量提升)">预解释(变量提升)</a><ul><li><a href="#t1什么是预解释">什么是预解释</a></li><li><a href="#t2内存的分类">内存的分类</a></li><li><a href="#t3函数执行机制">函数执行机制</a></li><li><a href="#t4私有变量和全局变量">私有变量和全局变量</a></li><li><a href="#t5作用域链">作用域链</a></li><li><a href="#t6闭包">闭包</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x9884;&#x89E3;&#x91CA;(&#x53D8;&#x91CF;&#x63D0;&#x5347;)">&#x9884;&#x89E3;&#x91CA;(&#x53D8;&#x91CF;&#x63D0;&#x5347;) <a href="#t0&#x9884;&#x89E3;&#x91CA;(&#x53D8;&#x91CF;&#x63D0;&#x5347;)"> # </a></h1>
+<h2 id="t1&#x4EC0;&#x4E48;&#x662F;&#x9884;&#x89E3;&#x91CA;">&#x4EC0;&#x4E48;&#x662F;&#x9884;&#x89E3;&#x91CA; <a href="#t1&#x4EC0;&#x4E48;&#x662F;&#x9884;&#x89E3;&#x91CA;"> # </a></h2>
+<ul>
+<li>&#x5728;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;,&#x5728;JS&#x4EE3;&#x7801;&#x6267;&#x884C;&#x4E4B;&#x524D;,&#x6D4F;&#x89C8;&#x5668;&#x9996;&#x5148;&#x4F1A;&#x9ED8;&#x8BA4;&#x7684;&#x628A;&#x6240;&#x6709;&#x5E26;var&#x548C;function&#x7684;&#x8FDB;&#x884C;&#x63D0;&#x524D;&#x7684;&#x58F0;&#x660E;&#x6216;&#x8005;&#x5B9A;&#x4E49;</li>
+<li>&#x58F0;&#x660E;(declare): &#x544A;&#x8BC9;&#x6D4F;&#x89C8;&#x5668;&#x5728;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x53EB;xxx&#x7684;&#x53D8;&#x91CF;,&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x53EA;&#x58F0;&#x660E;&#x4E86;&#x4F46;&#x6CA1;&#x6709;&#x8D4B;&#x503C;,&#x9ED8;&#x8BA4;&#x503C;&#x662F;undefined</li>
+<li>&#x5B9A;&#x4E49;(defined): &#x7ED9;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x8D4B;&#x503C;</li>
+<li>var: &#x5728;&#x9884;&#x89E3;&#x91CA;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x662F;&#x63D0;&#x524D;&#x7684;&#x58F0;&#x660E;</li>
+<li>function: &#x5728;&#x9884;&#x89E3;&#x91CA;&#x7684;&#x65F6;&#x5019;&#x58F0;&#x660E;&#x548C;&#x5B9A;&#x4E49;&#x90FD;&#x5B8C;&#x6210;&#x4E86;</li>
+<li>&#x9884;&#x89E3;&#x91CA;&#x53EA;&#x53D1;&#x751F;&#x5728;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x4E0B;</li>
+<li>&#x51FD;&#x6570;&#x7684;&#x6267;&#x884C;&#x53EF;&#x4EE5;&#x5199;&#x5728;&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x524D;&#x9762;,&#x56E0;&#x4E3A;&#x9884;&#x89E3;&#x91CA;&#x7684;&#x65F6;&#x5019;&#x51FD;&#x6570;&#x5C31;&#x5DF2;&#x7ECF;&#x58F0;&#x660E;&#x548C;&#x5B9A;&#x4E49;&#x4E86;</li>
+</ul>
+<h2 id="t2&#x5185;&#x5B58;&#x7684;&#x5206;&#x7C7B;">&#x5185;&#x5B58;&#x7684;&#x5206;&#x7C7B; <a href="#t2&#x5185;&#x5B58;&#x7684;&#x5206;&#x7C7B;"> # </a></h2>
+<ul>
+<li>&#x6808;&#x5185;&#x5B58;: &#x7528;&#x6765;&#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x4F9B;JS&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7684;&#x73AF;&#x5883;,&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;&#x548C;&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;</li>
+<li>&#x5806;&#x5185;&#x5B58;: &#x7528;&#x6765;&#x5B58;&#x653E;&#x5F15;&#x7528;&#x6570;&#x636E;&#x7C7B;&#x578B;,&#x4F8B;&#x5982;&#x5BF9;&#x8C61;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5B58;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x548C;&#x51FD;&#x6570;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x5B58;&#x7684;&#x4EE3;&#x7801;&#x5B57;&#x7B26;&#x4E32;</li>
+</ul>
+<h2 id="t3&#x51FD;&#x6570;&#x6267;&#x884C;&#x673A;&#x5236;">&#x51FD;&#x6570;&#x6267;&#x884C;&#x673A;&#x5236; <a href="#t3&#x51FD;&#x6570;&#x6267;&#x884C;&#x673A;&#x5236;"> # </a></h2>
+<ul>
+<li>&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;</li>
+<li>&#x5982;&#x679C;&#x6709;&#x5F62;&#x53C2;,&#x5148;&#x7ED9;&#x5F62;&#x53C2;&#x8D4B;&#x503C;</li>
+<li>&#x8FDB;&#x884C;&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x9884;&#x89E3;&#x91CA;</li>
+<li>&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#x4ECE;&#x4E0A;&#x5230;&#x4E0B;&#x6267;&#x884C;</li>
+</ul>
+<h2 id="t4&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x548C;&#x5168;&#x5C40;&#x53D8;&#x91CF;">&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x548C;&#x5168;&#x5C40;&#x53D8;&#x91CF; <a href="#t4&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x548C;&#x5168;&#x5C40;&#x53D8;&#x91CF;"> # </a></h2>
+<ul>
+<li>&#x5728;<strong>&#x5168;&#x5C40;&#x4F5C;&#x7528;&#x57DF;</strong>&#x4E0B;&#x58F0;&#x660E;(&#x9884;&#x89E3;&#x91CA;&#x7684;&#x65F6;&#x5019;)&#x7684;&#x53D8;&#x91CF;&#x662F;&#x5168;&#x5C40;&#x53D8;&#x91CF;</li>
+<li>&#x5728;<strong>&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;</strong>&#x4E2D;&#x58F0;&#x660E;&#x7684;&#x53D8;&#x91CF;&#x548C;<strong>&#x51FD;&#x6570;&#x7684;&#x5F62;&#x53C2;</strong>&#x90FD;&#x662F;&#x79C1;&#x6709;&#x7684;&#x53D8;&#x91CF;</li>
+</ul>
+<h2 id="t5&#x4F5C;&#x7528;&#x57DF;&#x94FE;">&#x4F5C;&#x7528;&#x57DF;&#x94FE; <a href="#t5&#x4F5C;&#x7528;&#x57DF;&#x94FE;"> # </a></h2>
+<ul>
+<li>&#x5728;&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#x4E2D;,&#x4EE3;&#x7801;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#x9047;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;,&#x9996;&#x5148;&#x8981;&#x786E;&#x5B9A;&#x8FD9;&#x4E2A;&#x53D8;&#x91CF;&#x662F;&#x5426;&#x4E3A;&#x79C1;&#x6709;&#x53D8;&#x91CF;,&#x5982;&#x679C;&#x662F;&#x79C1;&#x6709;&#x53D8;&#x91CF;,&#x90A3;&#x4E48;&#x548C;&#x5916;&#x9762;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x7CFB;,&#x5982;&#x679C;&#x4E0D;&#x662F;&#x79C1;&#x6709;&#x7684;,&#x5219;&#x5F80;&#x5F53;&#x524D;&#x4F5C;&#x7528;&#x57DF;&#x7684;&#x4E0A;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x8FDB;&#x884C;&#x67E5;&#x627E;,&#x5982;&#x679C;&#x4E0A;&#x7EA7;&#x4F5C;&#x7528;&#x57DF;&#x4E5F;&#x6CA1;&#x6709;&#x5219;&#x7EE7;&#x7EED;&#x67E5;&#x627E;,&#x76F4;&#x5230;&#x627E;&#x5230;window&#x4E3A;&#x6B62;,&#x5982;&#x679C;&#x8FD8;&#x6CA1;&#x6709;,&#x5C31;&#x4F1A;&#x62A5;&#x9519;</li>
+</ul>
+<h2 id="t6&#x95ED;&#x5305;">&#x95ED;&#x5305; <a href="#t6&#x95ED;&#x5305;"> # </a></h2>
+<ul>
+<li>&#x51FD;&#x6570;&#x5F62;&#x6210;&#x7684;&#x79C1;&#x6709;&#x4F5C;&#x7528;&#x57DF;&#x4FDD;&#x62A4;&#x4E86;&#x91CC;&#x9762;&#x7684;&#x79C1;&#x6709;&#x53D8;&#x91CF;&#x4E0D;&#x53D7;&#x5916;&#x754C;&#x5E72;&#x6270;(&#x5916;&#x9762;&#x4FEE;&#x6539;&#x4E0D;&#x4E86;&#x79C1;&#x6709;&#x7684;,&#x79C1;&#x6709;&#x7684;&#x4E5F;&#x4FEE;&#x6539;&#x4E0D;&#x4E86;&#x5916;&#x9762;&#x7684;)</li>
+</ul>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

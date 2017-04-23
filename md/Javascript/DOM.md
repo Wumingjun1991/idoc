@@ -45,6 +45,7 @@
 * [上下文].getElementsByTagName("标签名字"); 通过标签名获取一组元素(类数组,length,索引)上下文自己定义,一般都是父级元素,最多不会超过三级
 
 ### 获取文档的根元素
+
 * document.documentElement
 
 ### 获取body元素
