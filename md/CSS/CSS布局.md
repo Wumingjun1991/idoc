@@ -10,7 +10,6 @@
 * 先写默认样式的css代码,再写需要查询时的css代码
 
 ```javascript
-
  <style>
         div {
             height: 300px;
@@ -25,15 +24,12 @@
 
         }
     </style>
-    
 ```
 
 * 通过link元素查询媒体的宽度和高度,可以切换不同的css文件
 
 ```javascript
-
 <link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
-
 ```
 
 * 结合CSS媒体查询,可以创建适应不同设备的方向(横屏landscape、竖屏portrait等)的布局
