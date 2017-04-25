@@ -48,9 +48,9 @@
             },
             {
                 "工具": [
-                    "Idoc.md",
                     "Webstorm.md",
-                    "常用知识点.md"
+                    "常用知识点.md",
+                    "gitHub.md"
                 ]
             },
             {
