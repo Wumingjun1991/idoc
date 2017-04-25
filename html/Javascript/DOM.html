@@ -35,7 +35,7 @@
 <div class="container">
 
     <div class="page-toc">
-        <ul><li><a href="#t0DOM">DOM</a><ul><li><a href="#t1DOM基本知识">DOM基本知识</a></li><li><a href="#t2获取DOM元素">获取DOM元素</a><ul><li><a href="#t3上下文">上下文</a></li><li><a href="#t4通过ID获取元素">通过ID获取元素</a></li><li><a href="#t5通过选择器获取元素">通过选择器获取元素</a></li><li><a href="#t6通过name属性的值获取元素">通过name属性的值获取元素</a></li><li><a href="#t7通过类名获取元素">通过类名获取元素</a></li><li><a href="#t8通过标签名获取元素">通过标签名获取元素</a></li><li><a href="#t9获取文档的根元素">获取文档的根元素</a></li><li><a href="#t10获取body元素">获取body元素</a></li><li><a href="#t11其他方式">其他方式</a></li></ul></li><li><a href="#t12DOM节点">DOM节点</a></li><li><a href="#t13获取元素的样式">获取元素的样式</a></li><li><a href="#t14DOM元素的增删改查">DOM元素的增删改查</a></li></ul></li></ul>
+        <ul><li><a href="#t0DOM">DOM</a><ul><li><a href="#t1DOM基本知识">DOM基本知识</a></li><li><a href="#t2获取DOM元素">获取DOM元素</a><ul><li><a href="#t3上下文">上下文</a></li><li><a href="#t4通过ID获取元素">通过ID获取元素</a></li><li><a href="#t5通过选择器获取元素">通过选择器获取元素</a></li><li><a href="#t6通过name属性的值获取元素">通过name属性的值获取元素</a></li><li><a href="#t7通过类名获取元素">通过类名获取元素</a></li><li><a href="#t8通过标签名获取元素">通过标签名获取元素</a></li><li><a href="#t9获取文档的根元素">获取文档的根元素</a></li><li><a href="#t10获取body元素">获取body元素</a></li><li><a href="#t11其他方式">其他方式</a></li></ul></li><li><a href="#t12DOM节点">DOM节点</a></li><li><a href="#t13DOM节点操作方法">DOM节点操作方法</a></li><li><a href="#t14获取元素的样式">获取元素的样式</a></li><li><a href="#t15DOM元素的增删改查">DOM元素的增删改查</a></li></ul></li></ul>
     </div>
     
     <div class="content markdown-body">
@@ -98,10 +98,18 @@
 </ul>
 <h2 id="t12DOM&#x8282;&#x70B9;">DOM&#x8282;&#x70B9; <a href="#t12DOM&#x8282;&#x70B9;"> # </a></h2>
 <ul>
+<li>&#x5143;&#x7D20;&#x8282;&#x70B9;: nodeName: &#x5927;&#x5199;&#x6807;&#x7B7E;&#x540D;; nodeType: 1; nodeValue: null</li>
+<li>&#x6587;&#x672C;&#x8282;&#x70B9;: nodeName: #text; nodeType: 3; nodeValue: &#x6587;&#x672C;&#x5185;&#x5BB9;</li>
+<li>&#x6CE8;&#x91CA;&#x8282;&#x70B9;: nodeName: #commment; nodeType: 8; nodeValue: &#x6CE8;&#x91CA;&#x5185;&#x5BB9;</li>
+<li>document: nodeName: #document; nodeType: 9; nodeValue: null</li>
+<li>&#x5728;HTML&#x4E2D;&#x6240;&#x6709;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x8282;&#x70B9;</li>
+</ul>
+<h2 id="t13DOM&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;">DOM&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5; <a href="#t13DOM&#x8282;&#x70B9;&#x64CD;&#x4F5C;&#x65B9;&#x6CD5;"> # </a></h2>
+<ul>
 <li>Node &#x5728;&#x9875;&#x9762;&#x4E2D;&#x51FA;&#x73B0;&#x7684;&#x6240;&#x6709;&#x7684;&#x4E1C;&#x897F;&#x90FD;&#x662F;&#x8282;&#x70B9;,&#x5143;&#x7D20;,&#x6CE8;&#x91CA;,&#x6587;&#x672C;&#x7B49;&#x90FD;&#x662F;&#x8282;&#x70B9;</li>
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x5B50;&#x8282;&#x70B9;: xxx.childNodes</li>
-<li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x5B50;&#x8282;&#x70B9;:xxx.children</li>
-<li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x7236;&#x8282;&#x70B9;: xxx.parentNode</li>
+<li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x4E0B;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x5B50;&#x8282;&#x70B9;:xxx.children <strong>&#x4E0D;&#x517C;&#x5BB9;&#x4F4E;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;</strong></li>
+<li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x7236;&#x8282;&#x70B9;: xxx.parentNode;&#x8FD4;&#x56DE;&#x503C;&#x662F;&#x4E00;&#x4E2A;&#x5143;&#x7D20;</li>
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x4E0A;&#x4E00;&#x4E2A;&#x8282;&#x70B9;: xxx.previousSibling</li>
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x4E0A;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8282;&#x70B9;: xxx.previousElementSibling <strong>&#x4E0D;&#x517C;&#x5BB9;&#x4F4E;&#x7248;&#x672C;&#x6D4F;&#x89C8;&#x5668;</strong></li>
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;: xxx.nextSibling</li>
@@ -111,7 +119,7 @@
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x4E0B;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x8282;&#x70B9;: xxx.lastChild</li>
 <li>&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x4E0B;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8282;&#x70B9;: xxxlastElementsChild</li>
 </ul>
-<h2 id="t13&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;">&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F; <a href="#t13&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;"> # </a></h2>
+<h2 id="t14&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;">&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F; <a href="#t14&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x6837;&#x5F0F;"> # </a></h2>
 <ul>
 <li>&#x5143;&#x7D20;(&#x5BF9;&#x8C61;)&#x6709;&#x4E2A;&#x5185;&#x7F6E;&#x5C5E;&#x6027;&#x53EB;style,style&#x5C5E;&#x6027;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;,&#x5B83;&#x6709;&#x5F88;&#x591A;&#x6837;&#x5F0F;&#x5C5E;&#x6027;</li>
 <li>&#x5143;&#x7D20;.style.color; &#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x5143;&#x7D20;&#x4E2D;&#x7684;&#x989C;&#x8272;&#x5C5E;&#x6027;</li>
@@ -119,7 +127,7 @@
 <li>getComputedstyle(&#x5143;&#x7D20;).&#x6837;&#x5F0F;&#x5C5E;&#x6027;: &#x83B7;&#x53D6;&#x8BE5;&#x5143;&#x7D20;&#x6240;&#x6709;&#x7684;&#x6837;&#x5F0F;<strong>&#x53EA;&#x80FD;&#x83B7;&#x53D6;&#x4E0D;&#x80FD;&#x4FEE;&#x6539;</strong></li>
 <li>getComputedstyle&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;IE678&#x4E0D;&#x517C;&#x5BB9;,IE&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x65B9;&#x6CD5;:currentstyle</li>
 </ul>
-<h2 id="t14DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;">DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5; <a href="#t14DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;"> # </a></h2>
+<h2 id="t15DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;">DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5; <a href="#t15DOM&#x5143;&#x7D20;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;"> # </a></h2>
 <ul>
 <li>&#x521B;&#x5EFA;&#x65B0;&#x7684;&#x5143;&#x7D20;&#x8282;&#x70B9;: createElement()</li>
 <li>&#x5411;&#x6307;&#x5B9A;&#x5143;&#x7D20;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x4E4B;&#x540E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x8282;&#x70B9;: &#x7236;&#x7EA7;&#x5BF9;&#x8C61;.appendChild(&#x65B0;&#x521B;&#x5EFA;&#x7684;&#x8282;&#x70B9;)</li>

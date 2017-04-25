@@ -27,7 +27,7 @@
 
 ![](https://thumbnail0.baidupcs.com/thumbnail/e8eebfaf7a835be902fd7ca1f63514bf?fid=3359068741-250528-457152460087686&time=1489557600&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-x8uZ6VZEFftnnVRIc5%2FDC0dOqOc%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1707429127861127036&dp-callid=0&size=c710_u400&quality=100)
 
-* 2.在网站：http://idea.lanyus.com/ 中获取注册码，然后选择`License server`选项输入注册码，激活完毕
+* 2.在网站：http://idea.imsxm.com/ 中获取注册码，然后选择`License server`选项输入注册码，激活完毕
 
 ## 4.配置
 

@@ -59,10 +59,18 @@
 
 ## DOM节点
 
+* 元素节点: nodeName: 大写标签名; nodeType: 1; nodeValue: null
+* 文本节点: nodeName: #text; nodeType: 3; nodeValue: 文本内容
+* 注释节点: nodeName: #commment; nodeType: 8; nodeValue: 注释内容
+* document: nodeName: #document; nodeType: 9; nodeValue: null
+* 在HTML中所有东西都是节点
+
+## DOM节点操作方法
+
 * Node 在页面中出现的所有的东西都是节点,元素,注释,文本等都是节点
 * 获取指定元素下所有的子节点: xxx.childNodes
-* 获取指定元素下所有的元素子节点:xxx.children
-* 获取指定元素的父节点: xxx.parentNode
+* 获取指定元素下所有的元素子节点:xxx.children **不兼容低版本浏览器**
+* 获取指定元素的父节点: xxx.parentNode;返回值是一个元素
 * 获取指定元素的上一个节点: xxx.previousSibling
 * 获取指定元素的上一个元素节点: xxx.previousElementSibling **不兼容低版本浏览器**
 * 获取指定元素的下一个节点: xxx.nextSibling
