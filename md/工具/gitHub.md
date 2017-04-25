@@ -56,8 +56,9 @@ git --version
 ## idoc更新
 
 ```
-    git status
-    git add -A 
-    git commit -m "first page update"
-    git push origin gh-pages
+ git status
+ git add -A 
+ git commit -m "first page update"
+ git push origin gh-pages
+ 
 ```
