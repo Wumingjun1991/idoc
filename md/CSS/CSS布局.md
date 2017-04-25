@@ -9,7 +9,7 @@
 * 媒体查询是指通过一定的语法,查询浏览器可视区域的宽度或者高度,通过区分宽高来进行同一个html文件多个css样式的添加
 * 先写默认样式的css代码,再写需要查询时的css代码
 
-```
+```javascript
 
  <style>
         div {
@@ -30,7 +30,7 @@
 
 * 通过link元素查询媒体的宽度和高度,可以切换不同的css文件
 
-```
+```javascript
 
 <link rel="stylesheet" media="mediatype and|not|only (media feature)" href="mystylesheet.css">
 
@@ -42,7 +42,7 @@
 * landscape： 除portrait值情况外，都是landscape
 * 实例：
 
-```
+```javascript
 
   @media only screen and (orientation: landscape) {
       body {
