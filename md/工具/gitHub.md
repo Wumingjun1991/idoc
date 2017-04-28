@@ -33,32 +33,3 @@ git --version
 * 代码库设置:Setting
    * 接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages
    * 点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面
- 
-
-## idoc的安装
-
-* 在电脑中新建idoc文件夹
-* npm install idoc -g
-
-## idoc初始化
-
-* idoc init 
-
-## idoc编译
-
-* idoc build
-
-## idoc建立本地服务
-
-* idoc server
-
-
-## idoc更新
-
-```
- git status
- git add -A 
- git commit -m "first page update"
- git push origin gh-pages
- 
-```
