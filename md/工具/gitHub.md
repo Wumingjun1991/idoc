@@ -33,3 +33,4 @@ git --version
 * 代码库设置:Setting
    * 接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages
    * 点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面
+ 
