@@ -35,11 +35,11 @@
 <div class="container">
 
     <div class="page-toc">
-        <ul><li><a href="#t0JS中的函数">JS中的函数</a><ul><li><a href="#t1函数的概念">函数的概念</a></li><li><a href="#t2函数的组成">函数的组成</a></li><li><a href="#t3函数的基本应用">函数的基本应用</a></li><li><a href="#t4函数的参数">函数的参数</a></li><li><a href="#t5arguments对象'object'">arguments对象'object'</a></li><li><a href="#t6return">return</a></li><li><a href="#t7匿名函数">匿名函数</a></li><li><a href="#t8自执行函数">自执行函数</a></li><li><a href="#t9this问题">this问题</a></li><li><a href="#t10函数原型上的call">函数原型上的call</a></li><li><a href="#t11函数原型上的apply">函数原型上的apply</a></li><li><a href="#t12bind">bind</a></li><li><a href="#t13严格模式">严格模式</a></li></ul></li></ul>
+        <ul><li><a href="#t0函数">函数</a><ul><li><a href="#t1函数的概念">函数的概念</a></li><li><a href="#t2函数的组成">函数的组成</a></li><li><a href="#t3函数的基本应用">函数的基本应用</a></li><li><a href="#t4函数的参数">函数的参数</a></li><li><a href="#t5arguments对象'object'">arguments对象'object'</a></li><li><a href="#t6return">return</a></li><li><a href="#t7匿名函数">匿名函数</a></li><li><a href="#t8自执行函数">自执行函数</a></li><li><a href="#t9this问题">this问题</a></li><li><a href="#t10函数原型上的call">函数原型上的call</a></li><li><a href="#t11函数原型上的apply">函数原型上的apply</a></li><li><a href="#t12bind">bind</a></li><li><a href="#t13严格模式">严格模式</a></li></ul></li></ul>
     </div>
     
     <div class="content markdown-body">
-        <h1 id="t0JS&#x4E2D;&#x7684;&#x51FD;&#x6570;">JS&#x4E2D;&#x7684;&#x51FD;&#x6570; <a href="#t0JS&#x4E2D;&#x7684;&#x51FD;&#x6570;"> # </a></h1>
+        <h1 id="t0&#x51FD;&#x6570;">&#x51FD;&#x6570; <a href="#t0&#x51FD;&#x6570;"> # </a></h1>
 <h2 id="t1&#x51FD;&#x6570;&#x7684;&#x6982;&#x5FF5;">&#x51FD;&#x6570;&#x7684;&#x6982;&#x5FF5; <a href="#t1&#x51FD;&#x6570;&#x7684;&#x6982;&#x5FF5;"> # </a></h2>
 <ul>
 <li>&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4E00;&#x6B21;&#x5B9A;&#x4E49;&#x591A;&#x6B21;&#x8C03;&#x7528;,&#x5E76;&#x4E14;&#x4E92;&#x76F8;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;</li>
@@ -124,7 +124,7 @@
 <h2 id="t10&#x51FD;&#x6570;&#x539F;&#x578B;&#x4E0A;&#x7684;call">&#x51FD;&#x6570;&#x539F;&#x578B;&#x4E0A;&#x7684;call <a href="#t10&#x51FD;&#x6570;&#x539F;&#x578B;&#x4E0A;&#x7684;call"> # </a></h2>
 <ul>
 <li>&#x51FD;&#x6570;&#x539F;&#x578B;&#x4E0A;&#x7684;call&#x65B9;&#x6CD5;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;,&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x81F3;&#x5C11;&#x8981;&#x4F20;&#x4E00;&#x4E2A;&#x53C2;&#x6570;,&#x8FD9;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x7528;&#x6765;&#x6539;&#x53D8;call&#x524D;&#x9762;&#x7684;&#x65B9;&#x6CD5;&#x7684;this&#x7684;</li>
-<li>call&#x65B9;&#x6CD5;&#x6709;&#x4E24;&#x4E2A;&#x4F5C;&#x7528;,&#x4E00;&#x4E2A;&#x662F;&#x6539;&#x53D8;this&#x6307;&#x5411;,&#x4E8C;&#x662F;&#x8BA9;&#x5F53;&#x524D;&#x7684;&#x51FD;&#x6570;&#x6267;&#x884C;</li>
+<li>call&#x65B9;&#x6CD5;&#x6709;&#x4E24;&#x4E2A;&#x4F5C;&#x7528;,&#x4E00;&#x4E2A;&#x662F;&#x6539;&#x53D8;&#x5F53;&#x524D;&#x51FD;&#x6570;&#x7684;this&#x6307;&#x5411;,&#x4E8C;&#x662F;&#x8BA9;&#x5F53;&#x524D;&#x7684;&#x51FD;&#x6570;&#x6267;&#x884C;</li>
 <li>&#x5728;&#x975E;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;,&#x5982;&#x679C;&#x4E0D;&#x4F20;&#x53C2;&#x6570;&#x6216;&#x8005;&#x4F20;&#x5165;null&#x6216;&#x8005;undefined,&#x9ED8;&#x8BA4;&#x6539;&#x53D8;this&#x6307;&#x5411;window</li>
 <li>&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;,&#x5982;&#x679C;&#x4E0D;&#x4F20;&#x53C2;&#x6570;&#x6216;&#x8005;&#x4F20;&#x5165;null&#x6216;&#x8005;undefined,&#x9ED8;&#x8BA4;&#x662F;&#x5C06;this&#x53D8;&#x6210;undefined</li>
 <li>call&#x65B9;&#x6CD5;&#x4ECE;&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x5F00;&#x59CB;&#x5C31;&#x662F;&#x7ED9;&#x524D;&#x9762;&#x51FD;&#x6570;&#x4F20;&#x7684;&#x53C2;&#x6570;</li>
@@ -138,11 +138,12 @@
 </ul>
 <h2 id="t12bind">bind <a href="#t12bind"> # </a></h2>
 <ul>
-<li>IE&#x4F4E;&#x7248;&#x672C;&#x4E0D;&#x517C;&#x5BB9;,&#x53EA;&#x6539;&#x53D8;&#x51FD;&#x6570;this&#x6307;&#x5411;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6539;&#x53D8;&#x540E;&#x65B0;&#x7684;&#x51FD;&#x6570;,&#x539F;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x4E5F;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</li>
+<li>IE&#x4F4E;&#x7248;&#x672C;&#x4E0D;&#x517C;&#x5BB9;,&#x53EA;&#x6539;&#x53D8;&#x51FD;&#x6570;this&#x6307;&#x5411;&#x5E76;&#x4E14;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x6539;&#x53D8;&#x540E;&#x65B0;&#x7684;&#x51FD;&#x6570;,&#x539F;&#x51FD;&#x6570;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x4E5F;&#x4E0D;&#x4F1A;&#x6267;&#x884C;</li>
 <li>bind&#x65B9;&#x6CD5;&#x5E38;&#x7528;&#x4E8E;&#x4E8B;&#x4EF6;&#x4E2D;</li>
 </ul>
 <h2 id="t13&#x4E25;&#x683C;&#x6A21;&#x5F0F;">&#x4E25;&#x683C;&#x6A21;&#x5F0F; <a href="#t13&#x4E25;&#x683C;&#x6A21;&#x5F0F;"> # </a></h2>
 <ul>
+<li>&quot;use strict&quot;</li>
 <li>&#x5728;&#x4E25;&#x683C;&#x6A21;&#x5F0F;&#x4E0B;,&#x51FD;&#x6570;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&#x524D;&#x9762;&#x6CA1;&#x6709;&#x70B9;,&#x5219;&#x9ED8;&#x8BA4;&#x662F;undefined </li>
 </ul>
 
