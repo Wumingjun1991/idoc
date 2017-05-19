@@ -17,7 +17,7 @@
         </div>
         <input type="checkbox" id="idoc_nav" />
         <div class="menu_tree">
-        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li><a href="../../html/Javascript/预解释.html">预解释</a></li><li><a href="../../html/Javascript/面向对象.html">面向对象</a></li><li class="active"><a href="../../html/Javascript/AJAX.html">AJAX</a></li><li><a href="../../html/Javascript/JSON.html">JSON</a></li><li><a href="../../html/Javascript/正则.html">正则</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li><li><a href="../../html/工具/gitHub.html">gitHub</a></li><li><a href="../../html/工具/idoc.html">idoc</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li><a href="../../html/Javascript/预解释.html">预解释</a></li><li><a href="../../html/Javascript/面向对象.html">面向对象</a></li><li class="active"><a href="../../html/Javascript/AJAX.html">AJAX</a></li><li><a href="../../html/Javascript/JSON.html">JSON</a></li><li><a href="../../html/Javascript/正则.html">正则</a></li><li><a href="../../html/Javascript/JQuery.html">JQuery</a></li><li><a href="../../html/Javascript/盒子模型.html">盒子模型</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li><li><a href="../../html/工具/gitHub.html">gitHub</a></li><li><a href="../../html/工具/idoc.html">idoc</a></li></ul></li><li><a href="#"><span></span>node</a><ul></ul></li></ul>    
         </div>
         
         
@@ -35,7 +35,7 @@
 <div class="container">
 
     <div class="page-toc">
-        <ul><li><a href="#t0AJAX">AJAX</a><ul><li><a href="#t1概念">概念</a></li><li><a href="#t2步骤">步骤</a></li></ul></li></ul>
+        <ul><li><a href="#t0AJAX">AJAX</a><ul><li><a href="#t1概念">概念</a></li><li><a href="#t2步骤">步骤</a></li><li><a href="#t3数据的异步加载">数据的异步加载</a></li><li><a href="#t4网站性能优化">网站性能优化</a></li></ul></li></ul>
     </div>
     
     <div class="content markdown-body">
@@ -51,6 +51,19 @@
 <li>&#x7ED1;&#x5B9A;onreadystatechange&#x4E8B;&#x4EF6;&#x6210;&#x529F;&#x8FD4;&#x56DE;&#x5E76;&#x643A;&#x5E26;&#x6570;&#x636E;</li>
 <li>xhr.readyState === 4 &amp;&amp; xhr.status === 200, &#x8BF4;&#x660E;&#x6210;&#x529F;</li>
 <li>xhr.send(null)&#x53D1;&#x9001;&#x7ED9;&#x540E;&#x53F0;,&#x5411;&#x540E;&#x53F0;&#x4F20;&#x6570;&#x636E;</li>
+</ul>
+<h2 id="t3&#x6570;&#x636E;&#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;">&#x6570;&#x636E;&#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D; <a href="#t3&#x6570;&#x636E;&#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;"> # </a></h2>
+<ul>
+<li>&#x5148;&#x628A;&#x4E24;&#x5C4F;&#x7684;&#x6570;&#x636E;&#x52A0;&#x8F7D;&#x51FA;&#x6765;,&#x540E;&#x9762;&#x7684;&#x6570;&#x636E;&#x4E0D;&#x8FDB;&#x884C;&#x5904;&#x7406;,&#x5F53;&#x9875;&#x9762;&#x6EDA;&#x52A8;&#x5230;&#x5BF9;&#x5E94;&#x533A;&#x57DF;&#x7684;&#x65F6;&#x5019;&#x518D;&#x91CD;&#x65B0;&#x8BF7;&#x6C42;&#x6570;&#x636E;&#x7136;&#x540E;&#x7ED1;&#x5B9A;&#x6E32;&#x67D3;&#x6570;&#x636E;</li>
+</ul>
+<h2 id="t4&#x7F51;&#x7AD9;&#x6027;&#x80FD;&#x4F18;&#x5316;">&#x7F51;&#x7AD9;&#x6027;&#x80FD;&#x4F18;&#x5316; <a href="#t4&#x7F51;&#x7AD9;&#x6027;&#x80FD;&#x4F18;&#x5316;"> # </a></h2>
+<ul>
+<li>&#x51CF;&#x5C11;HTTP&#x8BF7;&#x6C42;</li>
+<li>CSS/JS&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x5408;&#x5E76;</li>
+<li>ICON&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x5408;&#x5E76;(&#x96EA;&#x78A7;&#x56FE;/css sprite)</li>
+<li>&#x56FE;&#x7247;&#x5EF6;&#x8FDF;&#x52A0;&#x8F7D;</li>
+<li>&#x6570;&#x636E;&#x7684;&#x5F02;&#x6B65;&#x52A0;&#x8F7D;</li>
+<li>&#x5728;&#x79FB;&#x52A8;&#x7AEF;,&#x5982;&#x679C;&#x9875;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x7B80;&#x5355;&#x7684;&#x5BA3;&#x4F20;&#x9875;,&#x5C3D;&#x91CF;&#x628A;JS&#x548C;CSS&#x5199;&#x6210;&#x5185;&#x5D4C;&#x5F0F;</li>
 </ul>
 
         <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
