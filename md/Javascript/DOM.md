@@ -61,7 +61,7 @@
 
 * 元素节点: nodeName: 大写标签名; nodeType: 1; nodeValue: null
 * 文本节点: nodeName: #text; nodeType: 3; nodeValue: 文本内容
-* 注释节点: nodeName: #commment; nodeType: 8; nodeValue: 注释内容
+* 注释节点: nodeName: #comment; nodeType: 8; nodeValue: 注释内容
 * document: nodeName: #document; nodeType: 9; nodeValue: null
 * 在HTML中所有东西都是节点
 
