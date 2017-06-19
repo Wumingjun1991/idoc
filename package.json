@@ -31,7 +31,8 @@
                     "浮动和定位.md",
                     "CSS3.md",
                     "常用CSS属性.md",
-                    "CSS布局.md"
+                    "CSS布局.md",
+                    "less.md"
                 ]
             },
             {
@@ -50,7 +51,9 @@
                     "正则.md",
                     "JQuery.md",
                     "盒子模型.md",
-                    "事件.md"
+                    "事件.md",
+                    "ES6.md",
+                    "移动端事件.md"
                 ]
             },
             {
@@ -58,7 +61,8 @@
                     "Webstorm.md",
                     "常用知识点.md",
                     "gitHub.md",
-                    "idoc.md"
+                    "idoc.md",
+                    "常用DOS命令.md"
                 ]
             },
             {

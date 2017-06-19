@@ -177,4 +177,7 @@
 | text-wrap |	规定文本的换行规则 |
 | word-break |	规定非中日韩文本的换行规则 |
 | word-wrap |	允许对长的不可分割的单词进行分割并换行到下一行 |
+| text-overflow:clip | 对于文本内容超出容器会被裁剪,但是不会显示省略号 |
+| text-overflow:ellipsis | 超出内容裁剪,显示省略号,必须配合overflow:hidden和white-space:nowarp才有效果 |
+
 
