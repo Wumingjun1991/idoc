@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li><li><a href="../../html/CSS/less.html">less</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li><a href="../../html/Javascript/预解释.html">预解释</a></li><li><a href="../../html/Javascript/面向对象.html">面向对象</a></li><li><a href="../../html/Javascript/AJAX.html">AJAX</a></li><li><a href="../../html/Javascript/JSON.html">JSON</a></li><li><a href="../../html/Javascript/正则.html">正则</a></li><li><a href="../../html/Javascript/JQuery.html">JQuery</a></li><li><a href="../../html/Javascript/盒子模型.html">盒子模型</a></li><li><a href="../../html/Javascript/事件.html">事件</a></li><li><a href="../../html/Javascript/ES6.html">ES6</a></li><li><a href="../../html/Javascript/移动端事件.html">移动端事件</a></li><li><a href="../../html/Javascript/JSONP.html">JSONP</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li><li><a href="../../html/工具/gitHub.html">gitHub</a></li><li><a href="../../html/工具/idoc.html">idoc</a></li><li><a href="../../html/工具/常用DOS命令.html">常用DOS命令</a></li><li><a href="../../html/工具/HTTP.html">HTTP</a></li></ul></li><li><a href="#"><span></span>node</a><ul><li><a href="../../html/node/基本知识.html">基本知识</a></li></ul></li><li><a href="#"><span></span>VUE</a><ul><li><a href="../../html/VUE/安装.html">安装</a></li><li class="active"><a href="../../html/VUE/数据绑定.html">数据绑定</a></li><li><a href="../../html/VUE/表达式.html">表达式</a></li><li><a href="../../html/VUE/事件.html">事件</a></li></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0数据绑定">数据绑定</a></li><li><a href="#t1双向数据绑定">双向数据绑定</a></li><li><a href="#t2循环数据绑定">循环数据绑定</a></li><li><a href="#t3嵌套循环数据绑定">嵌套循环数据绑定</a></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x6570;&#x636E;&#x7ED1;&#x5B9A;">&#x6570;&#x636E;&#x7ED1;&#x5B9A; <a href="#t0&#x6570;&#x636E;&#x7ED1;&#x5B9A;"> # </a></h1>
+<pre><code class="lang-javascript">&lt;div id=&quot;box&quot;&gt;
+    {{message,msg}} {{message}} {{msg}} {{msg1}}
+
+    &#x5728;vue1.0&#x4E2D;,&#x5982;&#x679C;&#x60F3;&#x5B9E;&#x73B0;&#x5B57;&#x7B26;&#x4E32;&#x4E2D;&#x7684;html&#x8BC6;&#x522B;,&#x591A;&#x52A0;&#x4E00;&#x4E2A;&#x5927;&#x62EC;&#x53F7;&#x5373;&#x53EF;,vue2.0&#x4E2D;&#x4E0D;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;
+    &lt;!--{{{htmlStr}}}--&gt;
+
+    &#x5728;vue2.0&#x4E2D;,&#x7ED9;&#x5F53;&#x524D;&#x89C6;&#x56FE;&#x52A0;&#x4E00;&#x4E2A;&#x6307;&#x4EE4; v-html
+    &lt;div v-html=&quot;htmlStr&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/vue2.0.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    // &#x901A;&#x8FC7;&#x6784;&#x9020;&#x51FD;&#x6570;&#x7684;&#x65B9;&#x5F0F;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;vue&#x5B9E;&#x4F8B;
+    // el: &#x89C4;&#x5B9A;&#x5F53;&#x524D;&#x8FD9;&#x4E2A;vue&#x5B9E;&#x4F8B;&#x7684;&#x7BA1;&#x8F96;&#x8303;&#x56F4;
+    // data: &#x6570;&#x636E;
+    // {{message,msg}} &#x5982;&#x679C;&#x5728;&#x4E00;&#x4E2A;&#x5927;&#x62EC;&#x53F7;&#x4E2D;&#x5199;&#x5165;&#x4E24;&#x7EC4;&#x6570;&#x636E;,&#x53EA;&#x4F1A;&#x5C55;&#x793A;&#x6700;&#x540E;&#x7684;&#x90A3;&#x4E00;&#x4E2A;,&#x5982;&#x679C;&#x4E00;&#x5B9A;&#x8981;&#x5C55;&#x793A;&#x591A;&#x7EC4;&#x4E0D;&#x540C;&#x6570;&#x636E;,&#x5206;&#x5F00;&#x5199;
+    var v1 = new Vue({
+        el:&quot;#box&quot;,// &apos;&#x89C6;&#x56FE;&apos;
+        data:{// &#x6570;&#x636E;
+            message: &apos;&#x5566;&#x5566;&#x5566;&apos;,
+            msg: &apos;&#x54C8;&#x54C8;&#x54C8;&apos;,
+            msg1: &apos;&#x5475;&#x5475;&#x5475;&apos;,
+            fn:function () {
+                console.log(this);
+            },
+            htmlStr:&apos;&lt;span&gt;1234&lt;/span&gt;&apos;
+        }
+    });
+    console.dir(v1);
+    console.log(v1.$el);
+    console.log(v1._data);
+    // &#x5728;vue&#x4E2D;&#x5BF9;&#x6570;&#x636E;data&#x505A;&#x4E86;&#x5904;&#x7406;,&#x76F4;&#x63A5;&#x5C06;data&#x4E2D;&#x7684;&#x6570;&#x636E;,&#x8D4B;&#x503C;&#x7ED9;&#x4E86;&#x5F53;&#x524D;&#x5B9E;&#x4F8B;
+    console.log(v1._data.message == v1.message);
+    v1.fn();// &#x51FD;&#x6570;fn&#x4E2D;&#x7684;this&#x5C31;&#x662F;&#x5B9E;&#x4F8B;v1
+    v1._data.fn();// &#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#x51FD;&#x6570;fn&#x4E2D;&#x7684;this&#x5C31;&#x662F;v1.data&#x4E86;(&#x51FD;&#x6570;&#x6267;&#x884C;&#x7684;&#x65F6;&#x5019;&quot;.&quot;&#x524D;&#x9762;&#x662F;&#x4EC0;&#x4E48;,&#x51FD;&#x6570;&#x4E2D;&#x7684;this&#x5C31;&#x662F;&#x4EC0;&#x4E48;)
+    v1.msg1 = &apos;&#x53ED;&#x53ED;&#x53ED;&apos;;// &#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4FEE;&#x6539;&#x6570;&#x636E;
+
+&lt;/script&gt;
+</code></pre>
+<h1 id="t1&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;">&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A; <a href="#t1&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"> # </a></h1>
+<pre><code class="lang-javascript">&lt;div id=&quot;box&quot;&gt;
+    &lt;input type=&quot;text&quot; v-model=&apos;msg&apos;&gt; &lt;!--&#x7ED9;input&#x52A0;&#x4E00;&#x4E2A;v-model&#x7684;&#x6307;&#x4EE4;&#x5B9E;&#x73B0;&#x53CC;&#x5411;&#x6570;&#x636E;&#x7ED1;&#x5B9A;--&gt;
+    &lt;p&gt;{{msg}}&lt;/p&gt;
+    &lt;!--&#x5728;&#x5927;&#x62EC;&#x53F7;&#x4E2D;&#x52A0;&#x4E00;&#x4E2A;&apos;*&apos;,&#x5C31;&#x662F;&#x53EA;&#x8BA9;&#x6570;&#x636E;&#x7ED1;&#x5B9A;&#x4E00;&#x6B21;,input&#x4E2D;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x518D;&#x600E;&#x4E48;&#x53D8;&#x5316;,&#x8FD9;&#x91CC;&#x9762;&#x90FD;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;--&gt;
+    &lt;!--&lt;p&gt;{{*msg}}&lt;/p&gt;--&gt;
+    &lt;!--&#x5728;2.0&#x7248;&#x672C;&#x4E2D; &#x52A0;&#x4E00;&#x4E2A;&#x6307;&#x4EE4;&apos;v-once&apos;&#x5B9E;&#x73B0;&#x5355;&#x6B21;&#x6570;&#x636E;&#x7ED1;&#x5B9A;,2.0&#x7248;&#x672C;&#x4E2D;&#x4E0D;&#x652F;&#x6301;&apos;*&apos;&#x7684;&#x65B9;&#x6CD5;--&gt;
+    &lt;p v-once&gt;{{msg}}&lt;/p&gt; 
+&lt;/div&gt;
+&lt;script src=&quot;js/vue2.0.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var v1 = new Vue({
+        el:&apos;#box&apos;,
+        data:{
+            msg:&apos;hello word&apos;
+        }
+    });
+   /* &#x539F;&#x751F;&#x7684;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;,&#x8F93;&#x5165;&#x6846;&#x8F93;&#x5165;&#x4EC0;&#x4E48;,&#x9875;&#x9762;&#x5C31;&#x663E;&#x793A;&#x4EC0;&#x4E48;
+    var inp = document.getElementsByTagName(&apos;input&apos;)[0];
+    var p = document.getElementsByTagName(&apos;p&apos;)[0];
+    inp.oninput = function () {
+        p.innerHTML = this.value
+    }*/
+&lt;/script&gt;
+</code></pre>
+<h1 id="t2&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A;">&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A; <a href="#t2&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"> # </a></h1>
+<pre><code class="lang-javascript">&lt;div id=&quot;app&quot;&gt;
+    &lt;ul&gt;
+        &lt;!--&#x5FAA;&#x73AF;&#x54EA;&#x4E2A;&#x5C31;&#x7ED9;&#x5B83;&#x52A0;&#x6307;&#x4EE4;&apos;v-for&apos;--&gt;
+        &lt;!--key in list: key&#x8868;&#x793A;&#x5F53;&#x524D;&#x9879;--&gt;
+        &lt;!--&#x5728;1.0&#x7248;&#x672C;&#x4E2D;,&#x5982;&#x679C;&#x5FAA;&#x73AF;&#x9879;&#x6709;&#x91CD;&#x590D;,&#x63A7;&#x5236;&#x53F0;&#x4F1A;&#x62A5;&#x9519;--&gt;
+        &lt;!--track-by=&quot;$index&quot;: &#x5F3A;&#x5236;&#x6309;&#x7167;&#x7D22;&#x5F15;&#x8FDB;&#x884C;&#x5FAA;&#x73AF;--&gt;
+        &lt;!--{{$index}}: &#x5F53;&#x524D;&#x9879;&#x7684;&#x7D22;&#x5F15;,&#x5728;1.0&#x7248;&#x672C;&#x4E2D;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;--&gt;
+        &lt;!--&#x4F46;&#x662F;&#x5728;2.0&#x7248;&#x672C;&#x4E2D;&#x4F1A;&#x62A5;&#x9519;,&#x56E0;&#x4E3A;&#x5728;2.0&#x7248;&#x672C;&#x4E2D;&#x6CA1;&#x6709;&#x58F0;&#x660E;&#x8FC7;&#x7684;&#x53D8;&#x91CF;&#x662F;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;&#x7684;--&gt;
+        &lt;li v-for=&quot;key in list&quot; track-by=&quot;$index&quot;&gt;{{key}},{{$index}}&lt;/li&gt;
+        &lt;!--&#x4E0B;&#x9762;&#x8FD9;&#x4E2A;&#x662F;2.0&#x7248;&#x672C;&#x4E2D;&#x7684;&#x5199;&#x6CD5;--&gt;
+        &lt;li v-for=&quot;(item,index) in list&quot; track-by=&quot;$index&quot;&gt;{{item}},{{index}}&lt;/li&gt;
+        &lt;!--&#x5728;1.0&#x7248;&#x672C;&#x4E2D;&#x4E5F;&#x652F;&#x6301;&#x8FD9;&#x79CD;&#x5199;&#x6CD5;,&#x4F46;&#x662F;&#x6307;&#x4EE4;&#x4E2D;&#x7684;index&#x548C;item&#x7684;&#x987A;&#x5E8F;&#x548C;2.0&#x7248;&#x672C;&#x4E2D;&#x662F;&#x76F8;&#x53CD;&#x7684;--&gt;
+        &lt;li v-for=&quot;(index,item) in list&quot; track-by=&quot;$index&quot;&gt;{{item}},{{index}}&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/vue1.0.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var v1 = new Vue({
+        el:&apos;#app&apos;,
+        data:{
+            list:[&apos;1&apos;,&quot;Google&quot;,&quot;Apple&quot;,&quot;Facebook&quot;,&quot;Twitter&quot;,&quot;Youtube&quot;,&apos;1&apos;]
+        }
+    })
+&lt;/script&gt;
+</code></pre>
+<h1 id="t3&#x5D4C;&#x5957;&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A;">&#x5D4C;&#x5957;&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A; <a href="#t3&#x5D4C;&#x5957;&#x5FAA;&#x73AF;&#x6570;&#x636E;&#x7ED1;&#x5B9A;"> # </a></h1>
+<pre><code class="lang-javascript">&lt;div id=&quot;app&quot;&gt;
+    &lt;ul&gt;
+        &lt;!--li&#x4E2D;&#x662F;&#x5FAA;&#x73AF;list--&gt;
+        &lt;li v-for=&quot;item in list&quot;&gt;
+            &lt;!--span&#x4E2D;&#x5FAA;&#x73AF;&#x7684;&#x662F;list&#x4E2D;&#x7684;&#x6BCF;&#x4E00;&#x9879;item--&gt;
+            &lt;span v-for=&quot;(val,key) in item&quot;&gt;
+                {{key}}:&#x5C5E;&#x6027;&#x540D;,
+                {{val}}:&#x5C5E;&#x6027;&#x503C;
+            &lt;/span&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/vue2.0.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var v1 = new Vue({
+        data:{
+            list:[{name:&quot;A&quot;,age:12},{name:&quot;B&quot;,age:22},{name:&quot;C&quot;,age:32},{name:&quot;D&quot;,age:42},{name:&quot;E&quot;,age:52}]
+        }
+    });
+    v1.$mount(&apos;#app&apos;);//&#x5728;&#x5916;&#x90E8;&#x624B;&#x52A8;&#x7ED1;&#x5B9A;&#x89C6;&#x56FE;,&#x52A0;&#x4E0A;&#x7BA1;&#x8F96;&#x8303;&#x56F4;
+
+&lt;/script&gt;
+</code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
