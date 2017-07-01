@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li><li><a href="../../html/CSS/less.html">less</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li><a href="../../html/Javascript/预解释.html">预解释</a></li><li><a href="../../html/Javascript/面向对象.html">面向对象</a></li><li><a href="../../html/Javascript/AJAX.html">AJAX</a></li><li><a href="../../html/Javascript/JSON.html">JSON</a></li><li><a href="../../html/Javascript/正则.html">正则</a></li><li><a href="../../html/Javascript/JQuery.html">JQuery</a></li><li><a href="../../html/Javascript/盒子模型.html">盒子模型</a></li><li><a href="../../html/Javascript/事件.html">事件</a></li><li><a href="../../html/Javascript/ES6.html">ES6</a></li><li><a href="../../html/Javascript/移动端事件.html">移动端事件</a></li><li><a href="../../html/Javascript/JSONP.html">JSONP</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li><li><a href="../../html/工具/gitHub.html">gitHub</a></li><li><a href="../../html/工具/idoc.html">idoc</a></li><li><a href="../../html/工具/常用DOS命令.html">常用DOS命令</a></li><li><a href="../../html/工具/HTTP.html">HTTP</a></li></ul></li><li><a href="#"><span></span>VUE</a><ul><li><a href="../../html/VUE/安装.html">安装</a></li><li><a href="../../html/VUE/数据绑定.html">数据绑定</a></li><li><a href="../../html/VUE/表达式.html">表达式</a></li><li><a href="../../html/VUE/事件.html">事件</a></li><li><a href="../../html/VUE/添加类名和样式.html">添加类名和样式</a></li><li><a href="../../html/VUE/动画.html">动画</a></li><li class="active"><a href="../../html/VUE/生命周期.html">生命周期</a></li><li><a href="../../html/VUE/自定义指令.html">自定义指令</a></li><li><a href="../../html/VUE/请求数据.html">请求数据</a></li><li><a href="../../html/VUE/过滤器.html">过滤器</a></li></ul></li><li><a href="#"><span></span>Node.js</a><ul><li><a href="../../html/Node.js/基本知识.html">基本知识</a></li></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0生命周期">生命周期</a><ul><li><a href="#t1钩子函数">钩子函数</a></li><li><a href="#t21.0中的生命周期">1.0中的生命周期</a></li><li><a href="#t32.0中的生命周期">2.0中的生命周期</a></li></ul></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x751F;&#x547D;&#x5468;&#x671F;">&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t0&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h1>
+<h2 id="t1&#x94A9;&#x5B50;&#x51FD;&#x6570;">&#x94A9;&#x5B50;&#x51FD;&#x6570; <a href="#t1&#x94A9;&#x5B50;&#x51FD;&#x6570;"> # </a></h2>
+<ul>
+<li>1.0+&#x548C;2.0&#x7248;&#x672C;&#x5BF9;&#x6BD4;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">v1.0+</th>
+<th>v2.0</th>
+<th>&#x63CF;&#x8FF0;&#x3000;&#xFF5C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">init</td>
+<td>beforeCreate</td>
+<td>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x521A;&#x521A;&#x88AB;&#x521B;&#x5EFA;,&#x7EC4;&#x4EF6;&#x5C5E;&#x6027;&#x8BA1;&#x7B97;&#x4E4B;&#x524D;</td>
+</tr>
+<tr>
+<td style="text-align:left">created</td>
+<td>created</td>
+<td>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x5B8C;&#x6210;,&#x5C5E;&#x6027;&#x5DF2;&#x7ECF;&#x7ED1;&#x5B9A;,&#x4F46;&#x662F;DOM&#x8FD8;&#x672A;&#x751F;&#x6210;,$el&#x5C5E;&#x6027;&#x8FD8;&#x4E0D;&#x5B58;&#x5728;</td>
+</tr>
+<tr>
+<td style="text-align:left">beforeCompile</td>
+<td>beforeMount</td>
+<td>&#x6A21;&#x7248;&#x7F16;&#x8BD1;/&#x6302;&#x8F7D;&#x4E4B;&#x524D;</td>
+</tr>
+<tr>
+<td style="text-align:left">compiled</td>
+<td>mounted</td>
+<td>&#x6A21;&#x7248;&#x7F16;&#x8BD1;/&#x6302;&#x8F7D;&#x4E4B;&#x540E;</td>
+</tr>
+<tr>
+<td style="text-align:left">ready</td>
+<td>mounted</td>
+<td>&#x6A21;&#x7248;&#x7F16;&#x8BD1;/&#x6302;&#x8F7D;&#x4E4B;&#x540E;(&#x4E0D;&#x4FDD;&#x8BC1;&#x7EC4;&#x4EF6;&#x5DF2;&#x5728;document&#x4E2D;)</td>
+</tr>
+<tr>
+<td style="text-align:left">-</td>
+<td>beforeUpdate</td>
+<td>&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x4E4B;&#x524D;</td>
+</tr>
+<tr>
+<td style="text-align:left">-</td>
+<td>updated</td>
+<td>&#x7EC4;&#x4EF6;&#x66F4;&#x65B0;&#x4E4B;&#x540E;</td>
+</tr>
+<tr>
+<td style="text-align:left">-</td>
+<td>activated</td>
+<td>for keep-alive,&#x7EC4;&#x4EF6;&#x88AB;&#x6FC0;&#x6D3B;&#x65F6;&#x8C03;&#x7528;</td>
+</tr>
+<tr>
+<td style="text-align:left">-</td>
+<td>deactivated</td>
+<td>for keep-alive,&#x7EC4;&#x4EF6;&#x88AB;&#x79FB;&#x9664;&#x65F6;&#x8C03;&#x7528;</td>
+</tr>
+<tr>
+<td style="text-align:left">beforeDestory</td>
+<td>beforeDestory</td>
+<td>&#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x4E4B;&#x524D;&#x8C03;&#x7528;</td>
+</tr>
+<tr>
+<td style="text-align:left">destoryed</td>
+<td>destoryed</td>
+<td>&#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x4E4B;&#x540E;&#x8C03;&#x7528;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="t21.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">1.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t21.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
+<pre><code class="lang-javascript">&lt;script&gt;
+    <span class="hljs-comment">// &#x751F;&#x547D;&#x5468;&#x671F;: &#x94A9;&#x5B50;&#x51FD;&#x6570;</span>
+    <span class="hljs-comment">// vm.$mount(): &#x6302;&#x8F7D;,&#x624B;&#x52A8;&#x7ED9;&#x8FD9;&#x4E2A;vue&#x5B9E;&#x4F8B;&#x6DFB;&#x52A0;&#x89C6;&#x56FE;</span>
+    <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue({
+        <span class="hljs-comment">/*el:&quot;#app&quot;,*/</span>
+        data:{
+            <span class="hljs-attr">msg</span>:<span class="hljs-string">&quot;AA&quot;</span>
+        },
+        <span class="hljs-attr">created</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x5316;,&#x53EA;&#x8981;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;vue&#x5B9E;&#x4F8B;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6267;&#x884C;</span>
+            alert(<span class="hljs-string">&quot;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x6210;&#x529F;&quot;</span>);
+            <span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x7684;this&#x4E5F;&#x662F;&#x5F53;&#x524D;&#x5B9E;&#x4F8B;</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>);
+        },
+        <span class="hljs-attr">beforeCompile</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x5F00;&#x59CB;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;</span>
+            alert(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x7F16;&#x8BD1;&#x524D;&quot;</span>)
+        },
+        <span class="hljs-attr">compile</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            alert(<span class="hljs-string">&quot;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&quot;</span>)
+        },
+        <span class="hljs-attr">ready</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x63D2;&#x5165;&#x6587;&#x6863;&#x540E;</span>
+            alert(<span class="hljs-string">&quot;&#x51C6;&#x5907;&#x597D;&#x4E86;&quot;</span>)
+        },
+        <span class="hljs-attr">beforeDestroy</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x9500;&#x6BC1;&#x4E4B;&#x524D;</span>
+            alert(<span class="hljs-string">&quot;&#x51C6;&#x5907;&#x9500;&#x6BC1;&quot;</span>)
+        },
+        <span class="hljs-attr">destroyed</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x9500;&#x6BC1;&#x540E;</span>
+            alert(<span class="hljs-string">&quot;&#x9500;&#x6BC1;&quot;</span>)
+        }
+    });
+    vm.$mount(<span class="hljs-string">&apos;#app&apos;</span>);<span class="hljs-comment">// &#x624B;&#x52A8;&#x6302;&#x8F7D;</span>
+    vm.$destroy(); <span class="hljs-comment">// &#x9500;&#x6BC1;&#x9700;&#x8981;&#x624B;&#x52A8;&#x64CD;&#x4F5C;</span>
+    <span class="hljs-built_in">console</span>.log(vm);
+    <span class="hljs-built_in">console</span>.log(Vue.el);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+<h2 id="t32.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;">2.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F; <a href="#t32.0&#x4E2D;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;"> # </a></h2>
+<pre><code class="lang-javascript">&lt;script&gt;
+    <span class="hljs-comment">// &#x751F;&#x547D;&#x5468;&#x671F;: &#x94A9;&#x5B50;&#x51FD;&#x6570;</span>
+    <span class="hljs-comment">// vm.$mount(): &#x6302;&#x8F7D;,&#x624B;&#x52A8;&#x7ED9;&#x8FD9;&#x4E2A;vue&#x5B9E;&#x4F8B;&#x6DFB;&#x52A0;&#x89C6;&#x56FE;</span>
+    <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue({
+        <span class="hljs-comment">/*el:&quot;#app&quot;,*/</span>
+        data:{
+            <span class="hljs-attr">msg</span>:<span class="hljs-string">&quot;AA&quot;</span>
+        },
+        <span class="hljs-attr">beforeCreate</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// el&#x548C;data&#x8FD8;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x5316;</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>.$el);
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>._data);
+            alert(<span class="hljs-string">&quot;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x4E4B;&#x524D;&quot;</span>);
+        },
+        <span class="hljs-attr">created</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x5B9E;&#x4F8B;&#x5316;,&#x53EA;&#x8981;&#x521B;&#x5EFA;&#x4E86;&#x4E00;&#x4E2A;vue&#x5B9E;&#x4F8B;&#x5C31;&#x4F1A;&#x89E6;&#x53D1;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x6267;&#x884C;</span>
+            alert(<span class="hljs-string">&quot;&#x5B9E;&#x4F8B;&#x521B;&#x5EFA;&#x6210;&#x529F;&quot;</span>);
+            <span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x7684;this&#x4E5F;&#x662F;&#x5F53;&#x524D;&#x5B9E;&#x4F8B;</span>
+            <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">this</span>);
+        },
+        <span class="hljs-attr">beforeCompile</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x5F00;&#x59CB;&#x7F16;&#x8BD1;&#x4E4B;&#x524D;</span>
+            alert(<span class="hljs-string">&quot;&#x5F00;&#x59CB;&#x7F16;&#x8BD1;&#x524D;&quot;</span>)
+        },
+        <span class="hljs-attr">compile</span>:<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+            alert(<span class="hljs-string">&quot;&#x7F16;&#x8BD1;&#x5B8C;&#x6210;&quot;</span>)
+        },
+        <span class="hljs-attr">ready</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x63D2;&#x5165;&#x6587;&#x6863;&#x540E;</span>
+            alert(<span class="hljs-string">&quot;&#x51C6;&#x5907;&#x597D;&#x4E86;&quot;</span>)
+        },
+        <span class="hljs-attr">beforeDestroy</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x9500;&#x6BC1;&#x4E4B;&#x524D;</span>
+            alert(<span class="hljs-string">&quot;&#x51C6;&#x5907;&#x9500;&#x6BC1;&quot;</span>)
+        },
+        <span class="hljs-attr">destroyed</span>:<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+            <span class="hljs-comment">// &#x9500;&#x6BC1;&#x540E;</span>
+            alert(<span class="hljs-string">&quot;&#x9500;&#x6BC1;&quot;</span>)
+        }
+    });
+    vm.$mount(<span class="hljs-string">&apos;#app&apos;</span>);<span class="hljs-comment">// &#x624B;&#x52A8;&#x6302;&#x8F7D;</span>
+    vm.$destroy(); <span class="hljs-comment">// &#x9500;&#x6BC1;&#x9700;&#x8981;&#x624B;&#x52A8;&#x64CD;&#x4F5C;</span>
+    <span class="hljs-built_in">console</span>.log(vm);
+    <span class="hljs-built_in">console</span>.log(Vue.el);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

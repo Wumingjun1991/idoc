@@ -1,36 +1,100 @@
-# GitHub
+# git
 
-## 搭建环境准备
+## 设置git
 
-* Node.js 的安装和准备 
-* Git的安装和准备 
-* gitHub账户的配置
+* git config --list  查看当前配置列表
+* git config --global user.name 设置github帐号
+* git config --global user.email 设置邮箱
+* 提交的时候如果报错"who are you"表示设置帐号失败或者没有设置
 
-## Node.js 的安装和准备 
+## 管理文件
 
-* 1.下载node.js安装文件：https://nodejs.org/en/
-* 2.cmd，打开命令行界面,查看安装版本
+* git init 初始化文件夹,需要管理哪个文件夹就在当前文件夹中执行这个命令
+* mkdir 创建目录(文件夹)
+* touch 创建文件
+* cat 查看文件
+* vi 编辑文件
+    * i 插入
+    * ECS+:wq! 保存退出
+    * ESC+:q! 强制退出,如果有修改文件不会保存当前修改
+    
+## git的三个区
 
-```
-nede -v
-npm -v
-```
+### 工作区
 
-## 配置Git环境
+* 默认的文件都存在工作区
+* git add '文件名' 把当前文件提交到暂存区
+* git add -A 把当前文件夹下所有文件都提交到暂存区
+* 在工作区中的文件是红色的,添加到暂存区之后是绿色
+* 通过git status查看当前文件夹下文件的状态
+* git diff 工作区代码和暂存区代码进行比较
 
-* 下载Git安装文件：https://git-scm.com/downloads
-* 打开命令行输入,检查安装是否成功
+### 暂存区/过渡区
 
-```
-git --version
-```
+* git commit -m "注释内容" 将当前文件夹下的文件提交到历史区
+* 暂存区起到过渡的作用,避免误操作
+* git diff ‐‐cached（‐‐staged): 暂存区和历史区中的代码比较 
+* gir checkout 文件名: 将暂存区中的文件覆盖掉工作区中的文件
 
-## github账户注册和配置
+### 历史区/版本库
 
-* Github注册：https://github.com/
-* 创建代码库
-* 在Repository name中填写代码仓库名字
-* 代码库设置:Setting
-   * 接下来开启gh-pages功能，点击界面右侧的Settings，你将会打开这个库的setting页面，向下拖动，直到看见GitHub Pages
-   * 点击Automatic page generator，Github将会自动替你创建出一个gh-pages的页面
- 
+* 查看历史状态,每次提交的历史记录
+* git master: 工作区和历史区中的代码比较
+* git log 查看当前时间之前的提交日志
+* git reset --hard '回滚',将工作区,暂存区,历史区用同一个版本全部覆盖掉
+* git reflog 查看所有提交日志
+
+## 分支管理
+
+* master 默认的主干
+* git branch 查看当前有几个分支
+* git branch 分支名  新建一个分支,可以是任意名字
+* git checkout 分支名 切换到当前分支
+* git branch -D 分支名 删除这个分支,但是不能在当前分支中删除这个分支,只能在其他分支中操作
+* git checkout -b 分支名 创建并切换到当前分支
+* 只有将内容提交到某个分支上,这个内容才会归属那个分支,别的分支就看不到这些被提交的内容了
+* git merge 分支名 合并分支
+* 在用git merge合并分支的时候,如果两个分支都有一个相同文件,但是文件内容不同的时候,需要手动进行修改然后再次提交
+
+## 提交
+
+* git commit -a -m '信息' (这种方式只适合已经提交过的文件再次修改提交,对于新创建的文件不能用这种方式)
+* 空文件夹在提交的时候会被自动忽略掉,如果需要被提交的话,可以在这个空文件夹中创建一个.gitkeep文件,这样就能被提交上去了
+
+## 筛选
+
+* 在文件夹中新建一个.gitignore文件,里面写入的文件名都会在提交的时候自动忽略掉
+* 需要忽略的文件要在提交之前就写好,不然还是会被提交
+
+## 提交到远程仓库
+
+* 1.git init 
+* touch .gitignore 写上忽略的内容
+* 创建需要提交的文件
+* 提交到暂存区 git add .
+* 提交到历史区 git commit -m '信息'
+* git remote add origin(别名) 地址  连接到远程仓库
+* git remote -v 查看远程仓库
+* git remote rm 别名   可以删除连接
+* git push 别名 分支  将当前分支推送到远程仓库中
+
+## 发布github静态页面
+
+* 必须要有一个固定的分支:gh-pages
+* 静态页面项目必须提交到gh-pages这个分支上
+* 在setting中可以免费送一个网址
+
+## 克隆
+
+* git clone 别人的地址 别名
+* git pull origin master 即可
+* 克隆一次,克隆下来会默认赠送一个地址,可以在这个地址上使用git pull不停更新数据
+* 如果克隆的时候产生了冲突,直接删除冲突文件,然后提交到历史区然后再次拉取
+
+## fork
+
+* 可以把别人的项目拷贝一份成为自己的(别人更新代码,fork下来的不受影响)
+
+## pull request
+
+* 发送合并请求(必须是fork的项目才能发送合并请求)

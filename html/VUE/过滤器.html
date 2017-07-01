@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>学习笔记</title>
+        
+    <link rel="stylesheet" type="text/css" href="../../static/css/main.css">
+</head>
+<body>
+<div class="navbar navbar-line">
+    <div class="container">
+        <div class="logo">
+            
+                学习笔记
+            
+        </div>
+        <input type="checkbox" id="idoc_nav" />
+        <div class="menu_tree">
+        <ul><li><a href="../../index.html">首页</a></li><li><a href="#"><span></span>HTML</a><ul><li><a href="../../html/HTML/HTML.html">HTML</a></li><li><a href="../../html/HTML/HTML5.html">HTML5</a></li><li><a href="../../html/HTML/常用标签分类.html">常用标签分类</a></li></ul></li><li><a href="#"><span></span>CSS</a><ul><li><a href="../../html/CSS/基本语法.html">基本语法</a></li><li><a href="../../html/CSS/选择器.html">选择器</a></li><li><a href="../../html/CSS/盒子模型.html">盒子模型</a></li><li><a href="../../html/CSS/浮动和定位.html">浮动和定位</a></li><li><a href="../../html/CSS/CSS3.html">CSS3</a></li><li><a href="../../html/CSS/常用CSS属性.html">常用CSS属性</a></li><li><a href="../../html/CSS/CSS布局.html">CSS布局</a></li><li><a href="../../html/CSS/less.html">less</a></li></ul></li><li><a href="#"><span></span>Javascript</a><ul><li><a href="../../html/Javascript/基本语法.html">基本语法</a></li><li><a href="../../html/Javascript/数据类型.html">数据类型</a></li><li><a href="../../html/Javascript/DOM.html">DOM</a></li><li><a href="../../html/Javascript/数组.html">数组</a></li><li><a href="../../html/Javascript/函数.html">函数</a></li><li><a href="../../html/Javascript/定时器.html">定时器</a></li><li><a href="../../html/Javascript/常用操作方法.html">常用操作方法</a></li><li><a href="../../html/Javascript/预解释.html">预解释</a></li><li><a href="../../html/Javascript/面向对象.html">面向对象</a></li><li><a href="../../html/Javascript/AJAX.html">AJAX</a></li><li><a href="../../html/Javascript/JSON.html">JSON</a></li><li><a href="../../html/Javascript/正则.html">正则</a></li><li><a href="../../html/Javascript/JQuery.html">JQuery</a></li><li><a href="../../html/Javascript/盒子模型.html">盒子模型</a></li><li><a href="../../html/Javascript/事件.html">事件</a></li><li><a href="../../html/Javascript/ES6.html">ES6</a></li><li><a href="../../html/Javascript/移动端事件.html">移动端事件</a></li><li><a href="../../html/Javascript/JSONP.html">JSONP</a></li></ul></li><li><a href="#"><span></span>工具</a><ul><li><a href="../../html/工具/Webstorm.html">Webstorm</a></li><li><a href="../../html/工具/常用知识点.html">常用知识点</a></li><li><a href="../../html/工具/gitHub.html">gitHub</a></li><li><a href="../../html/工具/idoc.html">idoc</a></li><li><a href="../../html/工具/常用DOS命令.html">常用DOS命令</a></li><li><a href="../../html/工具/HTTP.html">HTTP</a></li></ul></li><li><a href="#"><span></span>VUE</a><ul><li><a href="../../html/VUE/安装.html">安装</a></li><li><a href="../../html/VUE/数据绑定.html">数据绑定</a></li><li><a href="../../html/VUE/表达式.html">表达式</a></li><li><a href="../../html/VUE/事件.html">事件</a></li><li><a href="../../html/VUE/添加类名和样式.html">添加类名和样式</a></li><li><a href="../../html/VUE/动画.html">动画</a></li><li><a href="../../html/VUE/生命周期.html">生命周期</a></li><li><a href="../../html/VUE/自定义指令.html">自定义指令</a></li><li><a href="../../html/VUE/请求数据.html">请求数据</a></li><li class="active"><a href="../../html/VUE/过滤器.html">过滤器</a></li></ul></li><li><a href="#"><span></span>Node.js</a><ul><li><a href="../../html/Node.js/基本知识.html">基本知识</a></li></ul></li></ul>    
+        </div>
+        
+        
+
+        <section class="idoc_nav_btn">
+            <label for="idoc_nav"><span></span></label>
+        </section>
+    </div>
+    
+</div>
+
+
+
+
+<div class="container">
+
+    <div class="page-toc">
+        <ul><li><a href="#t0过滤器">过滤器</a></li></ul>
+    </div>
+    
+    <div class="content markdown-body">
+        <h1 id="t0&#x8FC7;&#x6EE4;&#x5668;">&#x8FC7;&#x6EE4;&#x5668; <a href="#t0&#x8FC7;&#x6EE4;&#x5668;"> # </a></h1>
+<pre><code class="lang-javascript">&lt;div id=<span class="hljs-string">&quot;app&quot;</span> style=<span class="hljs-string">&quot;font-size: 20px&quot;</span>&gt;
+    &#x9996;&#x5B57;&#x7B26;&#x53D8;&#x5927;&#x5199;{{wd|capitalize}}&lt;br&gt;
+    &#x5168;&#x90E8;&#x5B57;&#x7B26;&#x53D8;&#x5927;&#x5199;{{wd|uppercase}}&lt;br&gt;
+    &#x5168;&#x90E8;&#x5B57;&#x7B26;&#x53D8;&#x5C0F;&#x5199;{{<span class="hljs-string">&apos;WORD&apos;</span>|lowercase}}&lt;br&gt;
+    &#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x5668;{{price|currency}}&lt;br&gt;&lt;!--&#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x9ED8;&#x8BA4;&#x7684;&#x7B26;&#x53F7;&#x662F;$--&gt;
+    &#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x5668;{{price|currency &apos;&#xFFE5;&apos;}}&lt;br&gt;&lt;!--&#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x66FF;&#x6362;&#x8D27;&#x5E01;&#x5355;&#x4F4D;--&gt;
+    &#x8D27;&#x5E01;&#x8FC7;&#x6EE4;&#x5668;{{price|currency &apos;&#xFFE1;&apos; 0}}&lt;br&gt;&lt;!--&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x662F;&#x63A7;&#x5236;&#x4FDD;&#x7559;&#x51E0;&#x4F4D;&#x5C0F;&#x6570;--&gt;
+    &#x5EF6;&#x8FDF;&#x4E8B;&#x4EF6;&#x6267;&#x884C;&#x7684;&#x65F6;&#x95F4; &lt;input type=&quot;text&quot; @keyup=&quot;up|debounce 2000&quot;&gt;&lt;br&gt;&lt;!--2000&#x662F;&#x5EF6;&#x8FDF;&#x7684;&#x65F6;&#x95F4;--&gt;
+    limitBy &#x5FAA;&#x73AF;&#x6570;&#x7EC4;&#x7684;&#x65F6;&#x5019;&#x663E;&#x793A;&#x51E0;&#x6761;&#x6570;&#x636E;,&#x4ECE;&#x54EA;&#x51E0;&#x6761;(&#x7D22;&#x5F15;)&#x5F00;&#x59CB;&#x663E;&#x793A;
+    &lt;input type=&quot;button&quot; @click=&quot;count+=2&quot; value=&quot;&#x4E0B;&#x4E00;&#x9875;&quot;&gt;
+    &lt;p v-for=&quot;item in list|limitBy 2 count&quot;&gt;{{item}}&lt;/p&gt;&lt;br&gt;
+    filterBy &#x5728;&#x6240;&#x6709;&#x6570;&#x636E;&#x4E2D;&#x8FC7;&#x6EE4;
+    &lt;input type=&quot;text&quot; v-model=&quot;name&quot;&gt;
+    &lt;p v-for=&quot;item in items | filterBy name&quot;&gt;{{item}}&lt;/p&gt;&lt;br&gt;
+    orderBy &#x6392;&#x5E8F;&#x8FC7;&#x6EE4;
+    &lt;input type=&quot;button&quot; value=&quot;&#x6392;&#x5E8F;&quot; @click=&quot;order*=-1&quot;&gt;
+    &lt;div v-for=&quot;item in arr | orderBy &apos;a&apos; order&quot;&gt;{{item.a}},{{item.b}}&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;js/vue1.0.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    var vm = new Vue({
+        el:&apos;#app&apos;,
+        data:{
+            order:1,
+            wd:&apos;hello&apos;,
+            count:0,
+            price:99999,
+            list:[1,2,3,4,5,6,7],
+            items:[&apos;Tom&apos;,&apos;Jack&apos;,&apos;T-Bag&apos;,&apos;Json&apos;,&apos;Vin-Ds&apos;,&apos;Cm-Punk&apos;,&apos;Big-Show&apos;,&apos;Shane&apos;],
+            arr:[{a:1,b:&apos;a&apos;},{a:2,b:&apos;b&apos;},{a:3,b:&apos;c&apos;},{a:4,b:&apos;d&apos;},{a:5,b:&apos;e&apos;}]
+        },
+        methods:{
+            up(){
+                alert(1)
+            }
+        }
+    })
+&lt;/script&gt;
+</code></pre>
+<blockquote>
+<p>&#x5728;2.0&#x7248;&#x672C;&#x4E2D;&#x5220;&#x9664;&#x4E86;&#x6240;&#x6709;&#x7684;&#x8FC7;&#x6EE4;&#x5668;,&#x5982;&#x679C;&#x6709;&#x9700;&#x6C42;,&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5199;&#x5728;Vue&#x4E0A;</p>
+</blockquote>
+<pre><code class="lang-javascript">&lt;div id=<span class="hljs-string">&quot;app&quot;</span> style=<span class="hljs-string">&quot;font-size: 15px&quot;</span>&gt;
+    {{<span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span> | filterDate}}&lt;br&gt;
+    {{<span class="hljs-built_in">Date</span>.now() | filterDate}}&lt;br&gt;
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+&lt;script&gt;
+    Vue.filter(<span class="hljs-string">&quot;filterDate&quot;</span>,<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">value</span>) </span>{
+        <span class="hljs-comment">// value &#x5C31;&#x662F;&#x8981;&#x8FC7;&#x6EE4;&#x7684;&#x5185;&#x5BB9;</span>
+        <span class="hljs-built_in">console</span>.log(value);
+        <span class="hljs-keyword">var</span> time = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>(value)
+        <span class="hljs-keyword">return</span> <span class="hljs-string">`<span class="hljs-subst">${time.getFullYear()}</span>-<span class="hljs-subst">${time.getMonth()}</span>-<span class="hljs-subst">${time.getDate()}</span> <span class="hljs-subst">${time.getHours()}</span>:<span class="hljs-subst">${time.getMinutes()}</span>:<span class="hljs-subst">${time.getSeconds()}</span>`</span>
+    });
+    <span class="hljs-keyword">var</span> vm = <span class="hljs-keyword">new</span> Vue({
+        <span class="hljs-attr">a</span>:<span class="hljs-string">&apos;a&apos;</span>,
+        <span class="hljs-attr">b</span>:<span class="hljs-string">&apos;b&apos;</span>,
+        <span class="hljs-attr">el</span>:<span class="hljs-string">&apos;#app&apos;</span>,
+        <span class="hljs-attr">data</span>:{},
+        <span class="hljs-attr">methods</span>:{
+        }
+    });
+    <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x5C5E;&#x6027;&#x901A;&#x8FC7;$options&#x5C5E;&#x6027;&#x83B7;&#x53D6;</span>
+    <span class="hljs-built_in">console</span>.log(vm.$options);
+    <span class="hljs-built_in">console</span>.log(vm.$options.a);
+<span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></span>
+</code></pre>
+
+        <div class="copyright">Powered by <a href="https://github.com/jaywcjlove/idoc" target="_blank">idoc</a>. Dependence <a href="https://nodejs.org">Node.js</a> run.</div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
