@@ -67,3 +67,7 @@
 
 * 1.插件安装：点击左上角File-->Settings-->Plugins-->Browse repositories,在此菜单中找到Markdown support，点击Install安装
 * 2.Markdown基本语法参考网站：https://www.zybuluo.com/mdeditor?url=https://www.zybuluo.com/static/editor/md-help.markdown
+
+## 7.配置快捷键
+
+* File-->Setting-->Editor-->Live Templates 需要定义的模版类型-->添加快捷键名字-->配置快捷键内容-->define
