@@ -92,7 +92,8 @@
             },
             {
                 "React-Native": [
-                    "css属性.md"
+                    "css属性.md",
+                    "组件.md"
                 ]
             },
             {
